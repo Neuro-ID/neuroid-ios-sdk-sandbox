@@ -6,40 +6,44 @@ class ResultController: UITableViewController {
             tableView.reloadData()
         }
     }
+
+    deinit {
+        print("Deinit \(String(describing: self))")
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
         getData()
     }
-    
+
     func setupView() {
         navigationController?.navigationBar.isHidden = false
     }
-    
+
     func getData() {
         datasource = DataRepository.getHotels()
     }
 }
 
-
 extension ResultController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         datasource.count
     }
-    
+
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "HotelCell", for: indexPath) as! HotelCell
         cell.setData(datasource[indexPath.row])
         return cell
     }
-    
+
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let hotelDetail = datasource[indexPath.row].hotel_name
         let vc = UIAlertController(title: "View detail", message: hotelDetail, preferredStyle: .alert)
         vc.addAction(UIAlertAction(title: "OK", style: .destructive))
         present(vc, animated: true)
     }
-    
+
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 150
     }
@@ -50,7 +54,7 @@ class HotelCell: UITableViewCell {
     @IBOutlet weak var ratingLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
-    
+
     func setData(_ data: Hotel) {
         nameLabel.text = data.hotel_name
         ratingLabel.text = data.hotel_star_rating

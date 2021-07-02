@@ -1,5 +1,6 @@
 import SwiftRangeSlider
 import UIKit
+import NeuroID
 
 class FilterController: UIViewController {
     @IBOutlet weak var star1View: UIView!
@@ -23,7 +24,11 @@ class FilterController: UIViewController {
     @IBOutlet weak var hotelStarRatingLabel: UILabel!
     @IBOutlet weak var priceTitleLabel: UILabel!
     @IBOutlet weak var okButton: UIButton!
-    
+
+    deinit {
+        print("Deinit \(String(describing: self))")
+    }
+
     var filterOption: FilterOption?
     var didSelectOption: ((FilterOption?) -> Void)?
     var selectedStars = [Int: Bool]() {
@@ -42,55 +47,52 @@ class FilterController: UIViewController {
         super.viewDidLoad()
         setupView()
     }
-    
+
     func setupView() {
         navigationController?.navigationBar.isHidden = false
         let star1Tap = UITapGestureRecognizer(target: self, action: #selector(clickedStar1View))
         star1View.addGestureRecognizer(star1Tap)
-        
+
         let star2Tap = UITapGestureRecognizer(target: self, action: #selector(clickedStar2View))
         star2View.addGestureRecognizer(star2Tap)
-        
+
         let star3Tap = UITapGestureRecognizer(target: self, action: #selector(clickedStar3View))
         star3View.addGestureRecognizer(star3Tap)
-        
+
         let star4Tap = UITapGestureRecognizer(target: self, action: #selector(clickedStar4View))
         star4View.addGestureRecognizer(star4Tap)
-        
+
         let star5Tap = UITapGestureRecognizer(target: self, action: #selector(clickedStar5View))
         star5View.addGestureRecognizer(star5Tap)
-        
-        
+
         okButton.setTitleColor(Colors.colorTextAlt, for: .normal)
         okButton.titleLabel?.font = .boldSystemFont(ofSize: 15)
         okButton.backgroundColor = Colors.colorPrimary
-        
+
         [
             star1Label,
             star2Label,
             star3Label,
             star4Label,
-            star5Label,
+            star5Label
         ].forEach {
             $0?.font = .systemFont(ofSize: 13)
             $0?.textColor = Colors.colorText
         }
-        
+
         priceRangeSlider.addTarget(self, action: #selector(priceSliderValueChanged(_:)), for: .valueChanged)
-        
+
         hotelStarRatingLabel.textColor = Colors.colorText
-        
+
         priceTitleLabel.font = UIFont.boldSystemFont(ofSize: 15)
         priceTitleLabel.textColor = Colors.colorText
-        
+
         lowerPriceLabel.font = .systemFont(ofSize: 11)
         lowerPriceLabel.textColor = Colors.colorText
-        
+
         higherPriceLabel.font = .systemFont(ofSize: 11)
         higherPriceLabel.textColor = Colors.colorText
     }
-        
-    
 
     @objc func priceSliderValueChanged(_ priceSlider: RangeSlider) {
         priceTitleLabel.text = "$\(priceSlider.lowerValue) - $\(priceSlider.upperValue)"
@@ -100,16 +102,16 @@ class FilterController: UIViewController {
         filterOption?.lowerPrice = Int(priceSlider.lowerValue)
         filterOption?.upperPrice = Int(priceSlider.upperValue)
     }
-    
+
     func toggleStar(index: Int, isSelected: Bool) {
         let dict = [
             1: (view: star1View, label: star1Label, icon: star1StarImage),
             2: (view: star2View, label: star2Label, icon: star2StarImage),
             3: (view: star3View, label: star3Label, icon: star3StarImage),
             4: (view: star4View, label: star4Label, icon: star4StarImage),
-            5: (view: star5View, label: star5Label, icon: star5StarImage),
+            5: (view: star5View, label: star5Label, icon: star5StarImage)
         ]
-        
+
         let star = dict[index]
         if isSelected {
             star?.view?.backgroundColor = Colors.colorWhite
@@ -123,32 +125,32 @@ class FilterController: UIViewController {
             selectedStars[index] = true
         }
     }
-    
+
     @objc func clickedStar1View() {
         let index = 1
         toggleStar(index: index, isSelected: selectedStars[index] ?? false)
     }
-    
+
     @objc func clickedStar2View() {
         let index = 2
         toggleStar(index: index, isSelected: selectedStars[index] ?? false)
     }
-    
+
     @objc func clickedStar3View() {
         let index = 3
         toggleStar(index: index, isSelected: selectedStars[index] ?? false)
     }
-    
+
     @objc func clickedStar4View() {
         let index = 4
         toggleStar(index: index, isSelected: selectedStars[index] ?? false)
     }
-    
+
     @objc func clickedStar5View() {
         let index = 5
         toggleStar(index: index, isSelected: selectedStars[index] ?? false)
     }
-    
+
     @IBAction func okClicked(_ sender: Any) {
         navigationController?.popViewController(animated: true)
         didSelectOption?(filterOption)
