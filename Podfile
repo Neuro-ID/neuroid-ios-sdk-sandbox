@@ -6,7 +6,8 @@ target 'SamaHotels' do
   use_frameworks!
 
     pod 'SwiftRangeSlider'
-    pod 'NeuroID', :path => '~/Desktop/NeuroID' # Row to be added
+#  pod 'NeuroID', :path => '~/Desktop/NeuroID'
+    pod 'NeuroID', :git => 'https://github.com/nguyentruongky/Test.git'
 
 
 end

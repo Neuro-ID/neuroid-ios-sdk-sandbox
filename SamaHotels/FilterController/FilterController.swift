@@ -101,6 +101,8 @@ class FilterController: UIViewController {
         }
         filterOption?.lowerPrice = Int(priceSlider.lowerValue)
         filterOption?.upperPrice = Int(priceSlider.upperValue)
+
+        tracker?.log(event: NIEvent(type: .sliderChange, tg: ["lowerValue": priceSlider.lowerValue, "upperValue": priceSlider.upperValue], view: priceSlider))
     }
 
     func toggleStar(index: Int, isSelected: Bool) {
@@ -118,11 +120,13 @@ class FilterController: UIViewController {
             star?.label?.textColor = Colors.colorText
             star?.icon?.image = UIImage(named: "Star-Icon")
             selectedStars[index] = false
+            tracker?.logCheckBoxChange(isChecked: false, checkBox: star!.icon!)
         } else {
             star?.view?.backgroundColor = Colors.colorHightLight
             star?.label?.textColor = Colors.colorWhite
             star?.icon?.image = UIImage(named: "StarWhite-Icon")
             selectedStars[index] = true
+            tracker?.logCheckBoxChange(isChecked: true, checkBox: star!.icon!)
         }
     }
 
