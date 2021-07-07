@@ -5,9 +5,7 @@ target 'SamaHotels' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-    pod 'SwiftRangeSlider'
-#  pod 'NeuroID', :path => '~/Desktop/NeuroID'
-    pod 'NeuroID', :git => 'https://github.com/nguyentruongky/Test.git'
+    pod 'NeuroID', :git => 'git@github.com:Neuro-ID/neuroid-ios-sdk.git'
 
 
 end

@@ -1,4 +1,3 @@
-import SwiftRangeSlider
 import UIKit
 import NeuroID
 
