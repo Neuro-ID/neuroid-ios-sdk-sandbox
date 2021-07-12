@@ -11,7 +11,7 @@
         <!--Search City Controller-->
         <scene sceneID="qF2-sg-KgY">
             <objects>
-                <viewController storyboardIdentifier="SearchCityController" id="3cK-xe-S9w" customClass="SearchCityController" customModule="SamaHotels" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SearchCityController" id="3cK-xe-S9w" customClass="SearchCityController" customModule="NeuroIdExample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VhW-tx-YTa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

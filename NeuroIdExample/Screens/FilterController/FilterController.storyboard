@@ -12,7 +12,7 @@
         <!--Filter Controller-->
         <scene sceneID="i3p-uP-9aa">
             <objects>
-                <viewController storyboardIdentifier="FilterController" id="fBN-rp-goW" customClass="FilterController" customModule="SamaHotels" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FilterController" id="fBN-rp-goW" customClass="FilterController" customModule="NeuroIdExample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Orv-a7-0Nm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -176,7 +176,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9WA-rS-Jqt" userLabel="Price">
                                         <rect key="frame" x="0.0" y="162" width="366" height="60.5"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P5u-VA-hJM" customClass="RangeSlider" customModule="SamaHotels" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P5u-VA-hJM" customClass="RangeSlider" customModule="NeuroIdExample" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="25.5" width="366" height="35"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>

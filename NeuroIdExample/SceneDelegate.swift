@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  SamaHotels
+//  NeuroIdExample
 //
 //  Created by Ky Nguyen on 7/1/21.
 //

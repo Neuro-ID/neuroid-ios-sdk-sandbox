@@ -11,7 +11,7 @@
         <!--Search Controller-->
         <scene sceneID="Xod-Uh-1s8">
             <objects>
-                <viewController id="qnD-tl-4pF" customClass="SearchController" customModule="SamaHotels" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qnD-tl-4pF" customClass="SearchController" customModule="NeuroIdExample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cVs-9c-Bbr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

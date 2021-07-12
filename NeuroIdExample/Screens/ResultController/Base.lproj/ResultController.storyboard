@@ -10,13 +10,13 @@
         <!--Result Controller-->
         <scene sceneID="qu5-gf-4EE">
             <objects>
-                <tableViewController storyboardIdentifier="ResultController" id="I6J-mk-QbQ" customClass="ResultController" customModule="SamaHotels" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="ResultController" id="I6J-mk-QbQ" customClass="ResultController" customModule="NeuroIdExample" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="F5n-Zo-Oup">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="HotelCell" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="HotelCell" rowHeight="167" id="xVg-HI-GJe" customClass="HotelCell" customModule="SamaHotels" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="HotelCell" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="HotelCell" rowHeight="167" id="xVg-HI-GJe" customClass="HotelCell" customModule="NeuroIdExample" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="24.5" width="414" height="167"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xVg-HI-GJe" id="jWY-27-g9H">

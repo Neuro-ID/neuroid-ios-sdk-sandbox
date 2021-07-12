@@ -28,11 +28,11 @@
 		26FC4C5226961E3600CC3292 /* RangeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FC4C3F26961DE600CC3292 /* RangeSlider.swift */; };
 		26FC4C5326961E3600CC3292 /* RangeSliderTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FC4C4126961DE600CC3292 /* RangeSliderTrack.swift */; };
 		26FC4C5426961E3600CC3292 /* RangeSliderKnob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FC4C4026961DE600CC3292 /* RangeSliderKnob.swift */; };
-		D491579FF95F2B1D095424F9 /* Pods_SamaHotels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 405E115431F3EF2DE91406EF /* Pods_SamaHotels.framework */; };
+		D491579FF95F2B1D095424F9 /* Pods_NeuroIdExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 405E115431F3EF2DE91406EF /* Pods_NeuroIdExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		26153CBA886B5C85F28542E7 /* Pods-SamaHotels.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SamaHotels.release.xcconfig"; path = "Target Support Files/Pods-SamaHotels/Pods-SamaHotels.release.xcconfig"; sourceTree = "<group>"; };
+		26153CBA886B5C85F28542E7 /* Pods-NeuroIdExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeuroIdExample.release.xcconfig"; path = "Target Support Files/Pods-NeuroIdExample/Pods-NeuroIdExample.release.xcconfig"; sourceTree = "<group>"; };
 		26A21418268DC05500B9BF46 /* FilterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterController.swift; sourceTree = "<group>"; };
 		26A2141A268DC06A00B9BF46 /* FilterController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FilterController.storyboard; sourceTree = "<group>"; };
 		26A2141D268DC3C100B9BF46 /* ResultController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultController.swift; sourceTree = "<group>"; };
@@ -40,7 +40,7 @@
 		26A21422268DC6CD00B9BF46 /* Hotel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hotel.swift; sourceTree = "<group>"; };
 		26A21424268DC6EB00B9BF46 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		26A21426268DCA2300B9BF46 /* FilterOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterOption.swift; sourceTree = "<group>"; };
-		26BCF365268DB5FC0002C289 /* SamaHotels.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SamaHotels.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		26BCF365268DB5FC0002C289 /* NeuroIdExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeuroIdExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26BCF368268DB5FC0002C289 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26BCF36A268DB5FC0002C289 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		26BCF36F268DB5FC0002C289 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ResultController.storyboard; sourceTree = "<group>"; };
@@ -56,8 +56,8 @@
 		26FC4C3F26961DE600CC3292 /* RangeSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RangeSlider.swift; path = SwiftRangeSlider/RangeSlider.swift; sourceTree = "<group>"; };
 		26FC4C4026961DE600CC3292 /* RangeSliderKnob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RangeSliderKnob.swift; path = SwiftRangeSlider/RangeSliderKnob.swift; sourceTree = "<group>"; };
 		26FC4C4126961DE600CC3292 /* RangeSliderTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RangeSliderTrack.swift; path = SwiftRangeSlider/RangeSliderTrack.swift; sourceTree = "<group>"; };
-		3DC5AB95258B9736407C8EA0 /* Pods-SamaHotels.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SamaHotels.debug.xcconfig"; path = "Target Support Files/Pods-SamaHotels/Pods-SamaHotels.debug.xcconfig"; sourceTree = "<group>"; };
-		405E115431F3EF2DE91406EF /* Pods_SamaHotels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SamaHotels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DC5AB95258B9736407C8EA0 /* Pods-NeuroIdExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeuroIdExample.debug.xcconfig"; path = "Target Support Files/Pods-NeuroIdExample/Pods-NeuroIdExample.debug.xcconfig"; sourceTree = "<group>"; };
+		405E115431F3EF2DE91406EF /* Pods_NeuroIdExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NeuroIdExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D491579FF95F2B1D095424F9 /* Pods_SamaHotels.framework in Frameworks */,
+				D491579FF95F2B1D095424F9 /* Pods_NeuroIdExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,7 +75,7 @@
 		25FA2DE21574C3C6A363F014 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				405E115431F3EF2DE91406EF /* Pods_SamaHotels.framework */,
+				405E115431F3EF2DE91406EF /* Pods_NeuroIdExample.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -104,19 +104,19 @@
 				25FA2DE21574C3C6A363F014 /* Frameworks */,
 				E331B1B6ABDA090EE7DA3887 /* Pods */,
 				26BCF366268DB5FC0002C289 /* Products */,
-				26BCF367268DB5FC0002C289 /* SamaHotels */,
+				26BCF367268DB5FC0002C289 /* NeuroIdExample */,
 			);
 			sourceTree = "<group>";
 		};
 		26BCF366268DB5FC0002C289 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				26BCF365268DB5FC0002C289 /* SamaHotels.app */,
+				26BCF365268DB5FC0002C289 /* NeuroIdExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		26BCF367268DB5FC0002C289 /* SamaHotels */ = {
+		26BCF367268DB5FC0002C289 /* NeuroIdExample */ = {
 			isa = PBXGroup;
 			children = (
 				26FC4C5626961E5C00CC3292 /* Models */,
@@ -128,7 +128,7 @@
 				26BCF373268DB5FD0002C289 /* LaunchScreen.storyboard */,
 				26BCF36A268DB5FC0002C289 /* SceneDelegate.swift */,
 			);
-			path = SamaHotels;
+			path = NeuroIdExample;
 			sourceTree = "<group>";
 		};
 		26BCF380268DB7730002C289 /* SearchCity */ = {
@@ -186,8 +186,8 @@
 		E331B1B6ABDA090EE7DA3887 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3DC5AB95258B9736407C8EA0 /* Pods-SamaHotels.debug.xcconfig */,
-				26153CBA886B5C85F28542E7 /* Pods-SamaHotels.release.xcconfig */,
+				3DC5AB95258B9736407C8EA0 /* Pods-NeuroIdExample.debug.xcconfig */,
+				26153CBA886B5C85F28542E7 /* Pods-NeuroIdExample.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -195,9 +195,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		26BCF364268DB5FC0002C289 /* SamaHotels */ = {
+		26BCF364268DB5FC0002C289 /* NeuroIdExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 26BCF379268DB5FD0002C289 /* Build configuration list for PBXNativeTarget "SamaHotels" */;
+			buildConfigurationList = 26BCF379268DB5FD0002C289 /* Build configuration list for PBXNativeTarget "NeuroIdExample" */;
 			buildPhases = (
 				75CA5D248E801E92DE54702B /* [CP] Check Pods Manifest.lock */,
 				26BCF361268DB5FC0002C289 /* Sources */,
@@ -209,9 +209,9 @@
 			);
 			dependencies = (
 			);
-			name = SamaHotels;
-			productName = SamaHotels;
-			productReference = 26BCF365268DB5FC0002C289 /* SamaHotels.app */;
+			name = NeuroIdExample;
+			productName = NeuroIdExample;
+			productReference = 26BCF365268DB5FC0002C289 /* NeuroIdExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -228,7 +228,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 26BCF360268DB5FC0002C289 /* Build configuration list for PBXProject "SamaHotels" */;
+			buildConfigurationList = 26BCF360268DB5FC0002C289 /* Build configuration list for PBXProject "NeuroIdExample" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -241,7 +241,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				26BCF364268DB5FC0002C289 /* SamaHotels */,
+				26BCF364268DB5FC0002C289 /* NeuroIdExample */,
 			);
 		};
 /* End PBXProject section */
@@ -269,15 +269,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SamaHotels/Pods-SamaHotels-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-NeuroIdExample/Pods-NeuroIdExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SamaHotels/Pods-SamaHotels-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-NeuroIdExample/Pods-NeuroIdExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SamaHotels/Pods-SamaHotels-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NeuroIdExample/Pods-NeuroIdExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		75CA5D248E801E92DE54702B /* [CP] Check Pods Manifest.lock */ = {
@@ -295,7 +295,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SamaHotels-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-NeuroIdExample-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -469,19 +469,19 @@
 		};
 		26BCF37A268DB5FD0002C289 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3DC5AB95258B9736407C8EA0 /* Pods-SamaHotels.debug.xcconfig */;
+			baseConfigurationReference = 3DC5AB95258B9736407C8EA0 /* Pods-NeuroIdExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YM62LBZ4XN;
-				INFOPLIST_FILE = SamaHotels/Info.plist;
+				INFOPLIST_FILE = NeuroIdExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = dev.kynguyen.SamaHotels;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.kynguyen.neuroid.example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -490,19 +490,19 @@
 		};
 		26BCF37B268DB5FD0002C289 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 26153CBA886B5C85F28542E7 /* Pods-SamaHotels.release.xcconfig */;
+			baseConfigurationReference = 26153CBA886B5C85F28542E7 /* Pods-NeuroIdExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YM62LBZ4XN;
-				INFOPLIST_FILE = SamaHotels/Info.plist;
+				INFOPLIST_FILE = NeuroIdExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = dev.kynguyen.SamaHotels;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.kynguyen.neuroid.example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -512,7 +512,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		26BCF360268DB5FC0002C289 /* Build configuration list for PBXProject "SamaHotels" */ = {
+		26BCF360268DB5FC0002C289 /* Build configuration list for PBXProject "NeuroIdExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				26BCF377268DB5FD0002C289 /* Debug */,
@@ -521,7 +521,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		26BCF379268DB5FD0002C289 /* Build configuration list for PBXNativeTarget "SamaHotels" */ = {
+		26BCF379268DB5FD0002C289 /* Build configuration list for PBXNativeTarget "NeuroIdExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				26BCF37A268DB5FD0002C289 /* Debug */,
