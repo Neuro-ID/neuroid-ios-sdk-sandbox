@@ -1,4 +1,5 @@
 import UIKit
+import NeuroID
 
 class SearchCityController: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
@@ -23,6 +24,8 @@ class SearchCityController: UIViewController {
 
     func setupView() {
         navigationController?.navigationBar.isHidden = false
+        searchBar.id = "searchBar"
+        tableView.id = "cityList"
 
         tableView.delegate = self
         tableView.dataSource = self
@@ -42,6 +45,7 @@ extension SearchCityController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CityCell", for: indexPath) as! CityCell
         cell.setData(datasource[indexPath.row])
+        tracker?.log(event: NIEvent(customEvent: "selectCity", tg: ["index": indexPath.row], view: tableView))
         return cell
     }
 

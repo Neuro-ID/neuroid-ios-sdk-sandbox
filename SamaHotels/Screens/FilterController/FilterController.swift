@@ -48,6 +48,12 @@ class FilterController: UIViewController {
     }
 
     func setupView() {
+        star1StarImage.id = "star1"
+        star2StarImage.id = "star2"
+        star3StarImage.id = "star3"
+        star4StarImage.id = "star4"
+        star5StarImage.id = "star5"
+
         navigationController?.navigationBar.isHidden = false
         let star1Tap = UITapGestureRecognizer(target: self, action: #selector(clickedStar1View))
         star1View.addGestureRecognizer(star1Tap)
@@ -79,8 +85,6 @@ class FilterController: UIViewController {
             $0?.textColor = Colors.colorText
         }
 
-        priceRangeSlider.addTarget(self, action: #selector(priceSliderValueChanged(_:)), for: .valueChanged)
-
         hotelStarRatingLabel.textColor = Colors.colorText
 
         priceTitleLabel.font = UIFont.boldSystemFont(ofSize: 15)
@@ -93,8 +97,8 @@ class FilterController: UIViewController {
         higherPriceLabel.textColor = Colors.colorText
     }
 
-    @objc func priceSliderValueChanged(_ priceSlider: RangeSlider) {
-        priceTitleLabel.text = "$\(priceSlider.lowerValue) - $\(priceSlider.upperValue)"
+    @IBAction func priceSliderValueChanged(_ priceSlider: RangeSlider) {
+        priceTitleLabel.text = "$\(Int(priceSlider.lowerValue)) - $\(Int(priceSlider.upperValue))"
         if filterOption == nil {
             filterOption = FilterOption()
         }

@@ -25,6 +25,9 @@
 		26BCF38D268DBADF0002C289 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BCF38C268DBADF0002C289 /* Extensions.swift */; };
 		26BCF390268DBDB40002C289 /* SearchCityController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26BCF38F268DBDB40002C289 /* SearchCityController.storyboard */; };
 		26BCF392268DBDCF0002C289 /* SearchCityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BCF391268DBDCF0002C289 /* SearchCityController.swift */; };
+		26FC4C5226961E3600CC3292 /* RangeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FC4C3F26961DE600CC3292 /* RangeSlider.swift */; };
+		26FC4C5326961E3600CC3292 /* RangeSliderTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FC4C4126961DE600CC3292 /* RangeSliderTrack.swift */; };
+		26FC4C5426961E3600CC3292 /* RangeSliderKnob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FC4C4026961DE600CC3292 /* RangeSliderKnob.swift */; };
 		D491579FF95F2B1D095424F9 /* Pods_SamaHotels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 405E115431F3EF2DE91406EF /* Pods_SamaHotels.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +53,9 @@
 		26BCF38C268DBADF0002C289 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		26BCF38F268DBDB40002C289 /* SearchCityController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchCityController.storyboard; sourceTree = "<group>"; };
 		26BCF391268DBDCF0002C289 /* SearchCityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCityController.swift; sourceTree = "<group>"; };
+		26FC4C3F26961DE600CC3292 /* RangeSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RangeSlider.swift; path = SwiftRangeSlider/RangeSlider.swift; sourceTree = "<group>"; };
+		26FC4C4026961DE600CC3292 /* RangeSliderKnob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RangeSliderKnob.swift; path = SwiftRangeSlider/RangeSliderKnob.swift; sourceTree = "<group>"; };
+		26FC4C4126961DE600CC3292 /* RangeSliderTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RangeSliderTrack.swift; path = SwiftRangeSlider/RangeSliderTrack.swift; sourceTree = "<group>"; };
 		3DC5AB95258B9736407C8EA0 /* Pods-SamaHotels.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SamaHotels.debug.xcconfig"; path = "Target Support Files/Pods-SamaHotels/Pods-SamaHotels.debug.xcconfig"; sourceTree = "<group>"; };
 		405E115431F3EF2DE91406EF /* Pods_SamaHotels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SamaHotels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -113,18 +119,11 @@
 		26BCF367268DB5FC0002C289 /* SamaHotels */ = {
 			isa = PBXGroup;
 			children = (
-				26A2141C268DC07A00B9BF46 /* FilterController */,
-				26A2141F268DC3E200B9BF46 /* ResultController */,
-				26BCF380268DB7730002C289 /* SearchCity */,
-				26BCF381268DB87E0002C289 /* SearchController */,
+				26FC4C5626961E5C00CC3292 /* Models */,
+				26FC4C5826961E6C00CC3292 /* Screens */,
+				26FC4C4A26961DE600CC3292 /* SwiftRangeSlider */,
 				26BCF368268DB5FC0002C289 /* AppDelegate.swift */,
 				26BCF371268DB5FD0002C289 /* Assets.xcassets */,
-				26A21424268DC6EB00B9BF46 /* City.swift */,
-				26BCF38A268DBA270002C289 /* Config.swift */,
-				26A21420268DC6B500B9BF46 /* DataRepository.swift */,
-				26BCF38C268DBADF0002C289 /* Extensions.swift */,
-				26A21426268DCA2300B9BF46 /* FilterOption.swift */,
-				26A21422268DC6CD00B9BF46 /* Hotel.swift */,
 				26BCF376268DB5FD0002C289 /* Info.plist */,
 				26BCF373268DB5FD0002C289 /* LaunchScreen.storyboard */,
 				26BCF36A268DB5FC0002C289 /* SceneDelegate.swift */,
@@ -148,6 +147,40 @@
 				26BCF382268DB88D0002C289 /* SearchController.swift */,
 			);
 			path = SearchController;
+			sourceTree = "<group>";
+		};
+		26FC4C4A26961DE600CC3292 /* SwiftRangeSlider */ = {
+			isa = PBXGroup;
+			children = (
+				26FC4C3F26961DE600CC3292 /* RangeSlider.swift */,
+				26FC4C4026961DE600CC3292 /* RangeSliderKnob.swift */,
+				26FC4C4126961DE600CC3292 /* RangeSliderTrack.swift */,
+			);
+			path = SwiftRangeSlider;
+			sourceTree = "<group>";
+		};
+		26FC4C5626961E5C00CC3292 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				26A21424268DC6EB00B9BF46 /* City.swift */,
+				26BCF38A268DBA270002C289 /* Config.swift */,
+				26A21420268DC6B500B9BF46 /* DataRepository.swift */,
+				26BCF38C268DBADF0002C289 /* Extensions.swift */,
+				26A21426268DCA2300B9BF46 /* FilterOption.swift */,
+				26A21422268DC6CD00B9BF46 /* Hotel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		26FC4C5826961E6C00CC3292 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				26A2141C268DC07A00B9BF46 /* FilterController */,
+				26A2141F268DC3E200B9BF46 /* ResultController */,
+				26BCF380268DB7730002C289 /* SearchCity */,
+				26BCF381268DB87E0002C289 /* SearchController */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 		E331B1B6ABDA090EE7DA3887 /* Pods */ = {
@@ -279,8 +312,11 @@
 				26A21423268DC6CD00B9BF46 /* Hotel.swift in Sources */,
 				26A21427268DCA2300B9BF46 /* FilterOption.swift in Sources */,
 				26BCF392268DBDCF0002C289 /* SearchCityController.swift in Sources */,
+				26FC4C5426961E3600CC3292 /* RangeSliderKnob.swift in Sources */,
 				26BCF383268DB88D0002C289 /* SearchController.swift in Sources */,
+				26FC4C5326961E3600CC3292 /* RangeSliderTrack.swift in Sources */,
 				26BCF369268DB5FC0002C289 /* AppDelegate.swift in Sources */,
+				26FC4C5226961E3600CC3292 /* RangeSlider.swift in Sources */,
 				26BCF38D268DBADF0002C289 /* Extensions.swift in Sources */,
 				26A2141E268DC3C100B9BF46 /* ResultController.swift in Sources */,
 				26BCF38B268DBA270002C289 /* Config.swift in Sources */,

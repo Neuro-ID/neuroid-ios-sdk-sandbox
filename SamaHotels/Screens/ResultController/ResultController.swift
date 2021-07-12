@@ -1,4 +1,5 @@
 import UIKit
+import NeuroID
 
 class ResultController: UITableViewController {
     var datasource = [Hotel]() {
@@ -18,6 +19,7 @@ class ResultController: UITableViewController {
     }
 
     func setupView() {
+        tableView.id = "hotelList"
         navigationController?.navigationBar.isHidden = false
     }
 
@@ -42,6 +44,7 @@ extension ResultController {
         let vc = UIAlertController(title: "View detail", message: hotelDetail, preferredStyle: .alert)
         vc.addAction(UIAlertAction(title: "OK", style: .destructive))
         present(vc, animated: true)
+        tracker?.log(event: NIEvent(customEvent: "ViewHotelDetail", tg: ["index": indexPath.row], view: tableView))
     }
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
