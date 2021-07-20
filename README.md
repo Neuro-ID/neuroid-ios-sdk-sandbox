@@ -6,8 +6,6 @@ Neuro-ID's Mobile SDK makes it simple to embed behavioral analytics inside your 
 
 ## Table of contents
 
-- [Documentation](#documentation-)
-
 - [Installation](#installation-)
 
 - [CocoaPods](#cocoapods-)
@@ -15,8 +13,6 @@ Neuro-ID's Mobile SDK makes it simple to embed behavioral analytics inside your 
 - [Getting started](#getting-started-)
 
 - [License](#license-)
-
-### Documentation [⤴](#table-of-contents)
 
 ## Installation [⤴](#table-of-contents)
 
