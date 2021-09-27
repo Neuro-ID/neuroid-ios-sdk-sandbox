@@ -45,12 +45,12 @@ extension SearchCityController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CityCell", for: indexPath) as! CityCell
         cell.setData(datasource[indexPath.row])
-        tracker?.log(event: NIEvent(customEvent: "selectCity", tg: ["index": indexPath.row], view: tableView))
         return cell
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let city = datasource[indexPath.row]
+        tracker?.captureEvent(event: NIDEvent(customEvent: NIDEventName.selectChange.rawValue, tg: ["index": indexPath.row], view: tableView))
         selectCityAction?(city)
         navigationController?.popViewController(animated: true)
     }
