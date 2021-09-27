@@ -12,7 +12,7 @@ import NeuroID
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        NeuroID.configure(clientKey: "key_live_xmt7n590eOQh8SHvGYwAyf2K", userId: "user_id_in_your_system_id")
+        NeuroID.configure(clientKey: "key_test_vtotrandom_form_mobilesandbox")
         return true
     }
 
