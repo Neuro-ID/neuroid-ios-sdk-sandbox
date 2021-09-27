@@ -2,20 +2,20 @@ PODS:
   - NeuroID (0.0.1)
 
 DEPENDENCIES:
-  - "NeuroID (from `git@github.com:Neuro-ID/neuroid-ios-sdk.git`)"
+  - NeuroID (from `https://github.com/Neuro-ID/neuroid-ios-sdk.git`)
 
 EXTERNAL SOURCES:
   NeuroID:
-    :git: "git@github.com:Neuro-ID/neuroid-ios-sdk.git"
+    :git: https://github.com/Neuro-ID/neuroid-ios-sdk.git
 
 CHECKOUT OPTIONS:
   NeuroID:
     :commit: 12a3b49aa1cc3337bbfc2cd8d5d0a48bad2f3028
-    :git: "git@github.com:Neuro-ID/neuroid-ios-sdk.git"
+    :git: https://github.com/Neuro-ID/neuroid-ios-sdk.git
 
 SPEC CHECKSUMS:
   NeuroID: 4b343b6f42f10db88033a9e4b2f16b4cbb8871fa
 
-PODFILE CHECKSUM: 0fa8be5f4d813a01b5b96f44fddd56c871c3d627
+PODFILE CHECKSUM: 819001da2f1a20d613b8b08dd20269fd96d381ca
 
 COCOAPODS: 1.10.1
