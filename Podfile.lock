@@ -10,7 +10,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   NeuroID:
-    :commit: 048cc65a253167cdd81d7397305df52749025486
+    :commit: b0d7ab178ea126d535ae28e2720cefda11e78a0c
     :git: https://github.com/Neuro-ID/neuroid-ios-sdk.git
 
 SPEC CHECKSUMS:
