@@ -6,6 +6,6 @@ target 'NeuroIdExample' do
   use_frameworks!
 
     pod 'NeuroID', :git => 'https://github.com/Neuro-ID/neuroid-ios-sdk.git'
-
+    
 
 end

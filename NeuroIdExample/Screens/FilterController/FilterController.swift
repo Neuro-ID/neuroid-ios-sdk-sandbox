@@ -123,13 +123,13 @@ class FilterController: UIViewController {
             star?.label?.textColor = Colors.colorText
             star?.icon?.image = UIImage(named: "Star-Icon")
             selectedStars[index] = false
-            tracker?.captureEventCheckBoxChange(isChecked: false, checkBox: star!.icon!)
+            tracker?.captureCheckBoxChange(isChecked: false, checkBox: star!.icon!)
         } else {
             star?.view?.backgroundColor = Colors.colorHightLight
             star?.label?.textColor = Colors.colorWhite
             star?.icon?.image = UIImage(named: "StarWhite-Icon")
             selectedStars[index] = true
-            tracker?.captureEventCheckBoxChange(isChecked: true, checkBox: star!.icon!)
+            tracker?.captureCheckBoxChange(isChecked: true, checkBox: star!.icon!)
         }
     }
 
