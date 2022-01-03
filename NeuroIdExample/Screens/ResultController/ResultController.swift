@@ -13,6 +13,7 @@ class ResultController: UITableViewController {
     }
 
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         setupView()
         getData()
@@ -44,7 +45,7 @@ extension ResultController {
         let vc = UIAlertController(title: "View detail", message: hotelDetail, preferredStyle: .alert)
         vc.addAction(UIAlertAction(title: "OK", style: .destructive))
         present(vc, animated: true)
-        tracker?.captureEvent(event: NIDEvent(customEvent: "ViewHotelDetail", tg: ["index": indexPath.row], view: tableView))
+//        tracker?.captureEvent(event: NIDEvent(customEvent: "ViewHotelDetail", tg: ["index": TargetValue.int(indexPath.row)], view: tableView))
     }
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

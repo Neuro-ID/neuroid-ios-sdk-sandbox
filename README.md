@@ -8,6 +8,8 @@ Neuro-ID's Mobile SDK makes it simple to embed behavioral analytics inside your 
 
 - [Installation](#installation-)
 
+If you are on a M1, make sure to install example/ios Podfile with `arch -x86_64 pod install`
+
 - [CocoaPods](#cocoapods-)
 
 - [Getting started](#getting-started-)

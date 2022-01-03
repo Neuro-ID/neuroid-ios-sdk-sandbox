@@ -1,4 +1,6 @@
 import UIKit
+import CoreMotion
+import CoreML
 
 class SearchController: UIViewController {
     @IBOutlet weak var searchButton: UIButton!
@@ -18,12 +20,61 @@ class SearchController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
+        let motion = CMMotionManager()
+        // Begin test
+        let ped = CMPedometer()
+
+        if (CMPedometer.isStepCountingAvailable()) {
+            print("here")
+        }
+//        GYRO
+//         Read the most recent gyroscope value
+//        motion.gyroData?.rotationRate.x
+//        motion.gyroData?.rotationRate.y
+//        motion.gyroData?.rotationRate.z
+
+//         How frequently to read gyroscope updates,
+//         in seconds
+        motion.gyroUpdateInterval = 0.1
+
+        // Start receiving gyroscope updates
+        // on a specific thread
+        motion.startGyroUpdates(to: .main) { (data, error) in
+            // Handle rotation update
+            if let data = motion.gyroData {
+                let x = data.rotationRate.x
+               let y = data.rotationRate.y
+               let z = data.rotationRate.z
+//               print("GYRO x: \(x), y:\(y), z\(z)")
+            }
+        }
+        if motion.isAccelerometerAvailable {
+              motion.accelerometerUpdateInterval = 1.0 / 60.0  // 60 Hz
+              motion.startAccelerometerUpdates()
+
+              // Configure a timer to fetch the data.
+              var timer = Timer(fire: Date(), interval: (1.0/60.0),
+                    repeats: true, block: { (timer) in
+                 // Get the accelerometer data.
+                 if let data = motion.accelerometerData {
+                    let x = data.acceleration.x
+                    let y = data.acceleration.y
+                    let z = data.acceleration.z
+//                    print("ACCELEROMETER x: \(x), y:\(y), z\(z)")
+                 }
+              })
+            
+
+              // Add the timer to the current run loop.
+            RunLoop.current.add(timer, forMode: RunLoop.Mode.default)
+           }
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.navigationBar.isHidden = true
     }
+
 
     func setupView() {
         hotelNameTextField.id = "hotelNameTextField"
