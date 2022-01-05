@@ -50,7 +50,7 @@ extension SearchCityController: UITableViewDataSource, UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let city = datasource[indexPath.row]
-        tracker?.captureEvent(event: NIDEvent(customEvent: NIDEventName.selectChange.rawValue, tg: ["index": indexPath.row], view: tableView))
+//        tracker?.captureEvent(event: NIDEvent(customEvent: NIDEventName.selectChange.rawValue, tg: ["index": indexPath.row], view: tableView))
         selectCityAction?(city)
         navigationController?.popViewController(animated: true)
     }

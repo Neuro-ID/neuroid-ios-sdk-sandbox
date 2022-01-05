@@ -44,6 +44,8 @@ class FilterController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("Hello!")
+//        NeuroID.stop()
         setupView()
     }
 
@@ -105,7 +107,7 @@ class FilterController: UIViewController {
         filterOption?.lowerPrice = Int(priceSlider.lowerValue)
         filterOption?.upperPrice = Int(priceSlider.upperValue)
 
-        tracker?.captureEvent(event: NIDEvent(type: .sliderChange, tg: ["lowerValue": priceSlider.lowerValue, "upperValue": priceSlider.upperValue], view: priceSlider))
+        tracker?.captureEvent(event: NIDEvent(type: .sliderChange, tg: ["lowerValue": TargetValue.double(priceSlider.lowerValue), "upperValue": TargetValue.double(priceSlider.upperValue)], view: priceSlider))
     }
 
     func toggleStar(index: Int, isSelected: Bool) {
