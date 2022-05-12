@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0707D3A1282D4C9900C1F425 /* NILoanOptionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0707D3A0282D4C9900C1F425 /* NILoanOptionsVC.swift */; };
+		0707D3A3282D4CCC00C1F425 /* NILoanOptionsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0707D3A2282D4CCC00C1F425 /* NILoanOptionsVC.xib */; };
+		07E3ABD1282D3B460024239C /* NIOnbardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E3ABD0282D3B460024239C /* NIOnbardingVC.swift */; };
+		07E3ABD3282D3B700024239C /* NIOnbardingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07E3ABD2282D3B700024239C /* NIOnbardingVC.xib */; };
 		26A21419268DC05500B9BF46 /* FilterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A21418268DC05500B9BF46 /* FilterController.swift */; };
 		26A2141B268DC06A00B9BF46 /* FilterController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26A2141A268DC06A00B9BF46 /* FilterController.storyboard */; };
 		26A2141E268DC3C100B9BF46 /* ResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A2141D268DC3C100B9BF46 /* ResultController.swift */; };
@@ -28,11 +32,15 @@
 		26FC4C5226961E3600CC3292 /* RangeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FC4C3F26961DE600CC3292 /* RangeSlider.swift */; };
 		26FC4C5326961E3600CC3292 /* RangeSliderTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FC4C4126961DE600CC3292 /* RangeSliderTrack.swift */; };
 		26FC4C5426961E3600CC3292 /* RangeSliderKnob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FC4C4026961DE600CC3292 /* RangeSliderKnob.swift */; };
-		D491579FF95F2B1D095424F9 /* Pods_NeuroIdExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 405E115431F3EF2DE91406EF /* Pods_NeuroIdExample.framework */; };
+		47597BB1C36331A0D664D6F0 /* Pods_NeuroIdExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4235A38210D4667457878301 /* Pods_NeuroIdExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		26153CBA886B5C85F28542E7 /* Pods-NeuroIdExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeuroIdExample.release.xcconfig"; path = "Target Support Files/Pods-NeuroIdExample/Pods-NeuroIdExample.release.xcconfig"; sourceTree = "<group>"; };
+		0707D3A0282D4C9900C1F425 /* NILoanOptionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NILoanOptionsVC.swift; sourceTree = "<group>"; };
+		0707D3A2282D4CCC00C1F425 /* NILoanOptionsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NILoanOptionsVC.xib; sourceTree = "<group>"; };
+		07E3ABD0282D3B460024239C /* NIOnbardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NIOnbardingVC.swift; sourceTree = "<group>"; };
+		07E3ABD2282D3B700024239C /* NIOnbardingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NIOnbardingVC.xib; sourceTree = "<group>"; };
+		12C55D1E9B43BD4951392785 /* Pods-NeuroIdExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeuroIdExample.debug.xcconfig"; path = "Target Support Files/Pods-NeuroIdExample/Pods-NeuroIdExample.debug.xcconfig"; sourceTree = "<group>"; };
 		26A21418268DC05500B9BF46 /* FilterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterController.swift; sourceTree = "<group>"; };
 		26A2141A268DC06A00B9BF46 /* FilterController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FilterController.storyboard; sourceTree = "<group>"; };
 		26A2141D268DC3C100B9BF46 /* ResultController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultController.swift; sourceTree = "<group>"; };
@@ -56,8 +64,8 @@
 		26FC4C3F26961DE600CC3292 /* RangeSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RangeSlider.swift; path = SwiftRangeSlider/RangeSlider.swift; sourceTree = "<group>"; };
 		26FC4C4026961DE600CC3292 /* RangeSliderKnob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RangeSliderKnob.swift; path = SwiftRangeSlider/RangeSliderKnob.swift; sourceTree = "<group>"; };
 		26FC4C4126961DE600CC3292 /* RangeSliderTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RangeSliderTrack.swift; path = SwiftRangeSlider/RangeSliderTrack.swift; sourceTree = "<group>"; };
-		3DC5AB95258B9736407C8EA0 /* Pods-NeuroIdExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeuroIdExample.debug.xcconfig"; path = "Target Support Files/Pods-NeuroIdExample/Pods-NeuroIdExample.debug.xcconfig"; sourceTree = "<group>"; };
-		405E115431F3EF2DE91406EF /* Pods_NeuroIdExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NeuroIdExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3120258B78B06CFDD5DC559F /* Pods-NeuroIdExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeuroIdExample.release.xcconfig"; path = "Target Support Files/Pods-NeuroIdExample/Pods-NeuroIdExample.release.xcconfig"; sourceTree = "<group>"; };
+		4235A38210D4667457878301 /* Pods_NeuroIdExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NeuroIdExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,17 +73,60 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D491579FF95F2B1D095424F9 /* Pods_NeuroIdExample.framework in Frameworks */,
+				47597BB1C36331A0D664D6F0 /* Pods_NeuroIdExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		25FA2DE21574C3C6A363F014 /* Frameworks */ = {
+		0707D39E282D4C3400C1F425 /* LoanAgree */ = {
 			isa = PBXGroup;
 			children = (
-				405E115431F3EF2DE91406EF /* Pods_NeuroIdExample.framework */,
+				0707D39F282D4C5000C1F425 /* View */,
+			);
+			path = LoanAgree;
+			sourceTree = "<group>";
+		};
+		0707D39F282D4C5000C1F425 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0707D3A0282D4C9900C1F425 /* NILoanOptionsVC.swift */,
+				0707D3A2282D4CCC00C1F425 /* NILoanOptionsVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		07E3ABCD282D3AE50024239C /* Sandbox */ = {
+			isa = PBXGroup;
+			children = (
+				0707D39E282D4C3400C1F425 /* LoanAgree */,
+				07E3ABCE282D3AED0024239C /* Onboarding */,
+			);
+			path = Sandbox;
+			sourceTree = "<group>";
+		};
+		07E3ABCE282D3AED0024239C /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				07E3ABCF282D3AF70024239C /* View */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		07E3ABCF282D3AF70024239C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				07E3ABD0282D3B460024239C /* NIOnbardingVC.swift */,
+				07E3ABD2282D3B700024239C /* NIOnbardingVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2648F782922DB2DB49BC6672 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4235A38210D4667457878301 /* Pods_NeuroIdExample.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -101,10 +152,10 @@
 		26BCF35C268DB5FC0002C289 = {
 			isa = PBXGroup;
 			children = (
-				25FA2DE21574C3C6A363F014 /* Frameworks */,
 				E331B1B6ABDA090EE7DA3887 /* Pods */,
 				26BCF366268DB5FC0002C289 /* Products */,
 				26BCF367268DB5FC0002C289 /* NeuroIdExample */,
+				2648F782922DB2DB49BC6672 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +170,7 @@
 		26BCF367268DB5FC0002C289 /* NeuroIdExample */ = {
 			isa = PBXGroup;
 			children = (
+				07E3ABCD282D3AE50024239C /* Sandbox */,
 				26FC4C5626961E5C00CC3292 /* Models */,
 				26FC4C5826961E6C00CC3292 /* Screens */,
 				26FC4C4A26961DE600CC3292 /* SwiftRangeSlider */,
@@ -186,8 +238,8 @@
 		E331B1B6ABDA090EE7DA3887 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3DC5AB95258B9736407C8EA0 /* Pods-NeuroIdExample.debug.xcconfig */,
-				26153CBA886B5C85F28542E7 /* Pods-NeuroIdExample.release.xcconfig */,
+				12C55D1E9B43BD4951392785 /* Pods-NeuroIdExample.debug.xcconfig */,
+				3120258B78B06CFDD5DC559F /* Pods-NeuroIdExample.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -199,11 +251,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 26BCF379268DB5FD0002C289 /* Build configuration list for PBXNativeTarget "NeuroIdExample" */;
 			buildPhases = (
-				75CA5D248E801E92DE54702B /* [CP] Check Pods Manifest.lock */,
+				01059FD5C680A2923EACDB68 /* [CP] Check Pods Manifest.lock */,
 				26BCF361268DB5FC0002C289 /* Sources */,
 				26BCF362268DB5FC0002C289 /* Frameworks */,
 				26BCF363268DB5FC0002C289 /* Resources */,
-				41F5C5383E6B6BD9EAC82FAE /* [CP] Embed Pods Frameworks */,
+				1CB50A59F51F7F1FECEEE325 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,8 +305,10 @@
 			files = (
 				26BCF375268DB5FD0002C289 /* LaunchScreen.storyboard in Resources */,
 				26BCF390268DBDB40002C289 /* SearchCityController.storyboard in Resources */,
+				0707D3A3282D4CCC00C1F425 /* NILoanOptionsVC.xib in Resources */,
 				26A2141B268DC06A00B9BF46 /* FilterController.storyboard in Resources */,
 				26BCF372268DB5FD0002C289 /* Assets.xcassets in Resources */,
+				07E3ABD3282D3B700024239C /* NIOnbardingVC.xib in Resources */,
 				26BCF370268DB5FC0002C289 /* ResultController.storyboard in Resources */,
 				26BCF387268DB8F60002C289 /* SearchController.storyboard in Resources */,
 			);
@@ -263,24 +317,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		41F5C5383E6B6BD9EAC82FAE /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NeuroIdExample/Pods-NeuroIdExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NeuroIdExample/Pods-NeuroIdExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NeuroIdExample/Pods-NeuroIdExample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		75CA5D248E801E92DE54702B /* [CP] Check Pods Manifest.lock */ = {
+		01059FD5C680A2923EACDB68 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -302,6 +339,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		1CB50A59F51F7F1FECEEE325 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NeuroIdExample/Pods-NeuroIdExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NeuroIdExample/Pods-NeuroIdExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NeuroIdExample/Pods-NeuroIdExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -311,6 +365,7 @@
 			files = (
 				26A21423268DC6CD00B9BF46 /* Hotel.swift in Sources */,
 				26A21427268DCA2300B9BF46 /* FilterOption.swift in Sources */,
+				07E3ABD1282D3B460024239C /* NIOnbardingVC.swift in Sources */,
 				26BCF392268DBDCF0002C289 /* SearchCityController.swift in Sources */,
 				26FC4C5426961E3600CC3292 /* RangeSliderKnob.swift in Sources */,
 				26BCF383268DB88D0002C289 /* SearchController.swift in Sources */,
@@ -320,6 +375,7 @@
 				26BCF38D268DBADF0002C289 /* Extensions.swift in Sources */,
 				26A2141E268DC3C100B9BF46 /* ResultController.swift in Sources */,
 				26BCF38B268DBA270002C289 /* Config.swift in Sources */,
+				0707D3A1282D4C9900C1F425 /* NILoanOptionsVC.swift in Sources */,
 				26A21425268DC6EB00B9BF46 /* City.swift in Sources */,
 				26A21421268DC6B500B9BF46 /* DataRepository.swift in Sources */,
 				26BCF36B268DB5FC0002C289 /* SceneDelegate.swift in Sources */,
@@ -469,19 +525,19 @@
 		};
 		26BCF37A268DB5FD0002C289 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3DC5AB95258B9736407C8EA0 /* Pods-NeuroIdExample.debug.xcconfig */;
+			baseConfigurationReference = 12C55D1E9B43BD4951392785 /* Pods-NeuroIdExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = X9986UAU23;
+				DEVELOPMENT_TEAM = R7TKKHQ7FG;
 				INFOPLIST_FILE = NeuroIdExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.neuroid.sandbox;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neuroid.sandboxnew;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -490,19 +546,19 @@
 		};
 		26BCF37B268DB5FD0002C289 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 26153CBA886B5C85F28542E7 /* Pods-NeuroIdExample.release.xcconfig */;
+			baseConfigurationReference = 3120258B78B06CFDD5DC559F /* Pods-NeuroIdExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = X9986UAU23;
+				DEVELOPMENT_TEAM = R7TKKHQ7FG;
 				INFOPLIST_FILE = NeuroIdExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.neuroid.sandbox;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neuroid.sandboxnew;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
