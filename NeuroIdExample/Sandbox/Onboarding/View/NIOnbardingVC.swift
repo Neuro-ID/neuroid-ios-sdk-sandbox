@@ -49,11 +49,12 @@ final class NIOnbardingVC: UIViewController {
     }
     /// Setup navigation bar image with logo
     private func setupNavBarImage() {
+        self.navigationController?.isNavigationBarHidden = false
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
-            imageView.contentMode = .scaleAspectFill
-            let image = UIImage(named: "NeuroID_logo")
-            imageView.image = image
-            navigationItem.titleView = imageView
+        imageView.contentMode = .scaleAspectFill
+        let image = UIImage(named: "NeuroID_logo")
+        imageView.image = image
+        navigationItem.titleView = imageView
     }
     /// Hide the date picker
     @objc func cancelAction() {
