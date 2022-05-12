@@ -13,7 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        NeuroID.configure(clientKey: "key_test_vtotrandom_form_mobilesandbox")
+        NeuroID.configure(clientKey: "key_live_suj4CX90v0un2k1ufGrbItT5")
         NeuroID.start();
         // resume() is called in case stop() was called in a previous build.
         // the local stroage will still have stop indicator in it unless resume is called.

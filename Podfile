@@ -4,6 +4,6 @@
 target 'NeuroIdExample' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-  pod 'NeuroID', :git => 'https://github.com/Neuro-ID/neuroid-ios-sdk.git'
-  # pod 'NeuroID', :path => ENV['NID_IOS_REPO']
+#  pod 'NeuroID', :git => 'https://github.com/Neuro-ID/neuroid-ios-sdk.git'
+   pod 'NeuroID', :path => ENV['NID_IOS_REPO']
 end
