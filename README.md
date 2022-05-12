@@ -22,6 +22,10 @@ Neuro-ID's Mobile SDK makes it simple to embed behavioral analytics inside your 
 - Set `signing & capabilities` to your organizations in build settings
 - Run and build
 
+To use a local version of the Neuro-ID sdk on your machine, uncomment in the Podfile and add the following env variable to your bash/zshrc:
+
+`export NID_IOS_REPO=path/to/sdk/here`
+
 ## Help [⤴](#table-of-contents)
 
 For our latest documentation, [visit here](https://neuro-id.readme.io/docs/overview)
