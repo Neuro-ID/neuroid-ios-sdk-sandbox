@@ -20,6 +20,7 @@ final class NIOnbardingVC: UIViewController {
     @IBOutlet weak var employerPhoneNumberlbl: UITextField!
     
     override func viewDidLoad() {
+        sessionidlbl.text = NeuroID.getSessionID()
         super.viewDidLoad()
         setupNavBarImage()
         setupDateBirthPicker()
