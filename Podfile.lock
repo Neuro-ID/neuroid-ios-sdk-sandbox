@@ -16,7 +16,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   NeuroID:
-    :commit: 6457f221b774645f6115cdfd0dd528c3320d326d
+    :commit: 9c3cd85fa62c4a622bece1562cb5b326e1589688
     :git: https://github.com/Neuro-ID/neuroid-ios-sdk.git
 
 SPEC CHECKSUMS:
@@ -25,4 +25,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 995b9f2d3f237a875d2e0d98f3974fec4a21009e
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.3
