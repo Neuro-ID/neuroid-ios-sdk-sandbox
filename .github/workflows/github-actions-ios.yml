@@ -5,6 +5,7 @@ on:
     branches:
       - main
       - master
+      - 'ENG-17-Fastlane-GithubActions-ios-sandbox'
       
 jobs:
   test:
@@ -12,6 +13,11 @@ jobs:
     steps:
       - name: Branch Checkout
         uses: actions/checkout@v3
+        
+      - name: Set up ruby env
+        uses: ruby/setup-ruby@v1
+        with:
+         ruby-version: 2.7.2
         
       - name: Bundle Install
         run: bundle install
