@@ -34,7 +34,7 @@ jobs:
         run: bundle exec fastlane test
         
         
-      - name: Upload iOS app to Testflight
-        run: bundle exec fastlane beta
-        env:
-         APP_STORE_API_KEY: ${{ secrets.APP_STORE_API_KEY }}
+     # - name: Upload iOS app to Testflight
+     #   run: bundle exec fastlane beta
+     #   env:
+     #    APP_STORE_API_KEY: ${{ secrets.APP_STORE_API_KEY }}
