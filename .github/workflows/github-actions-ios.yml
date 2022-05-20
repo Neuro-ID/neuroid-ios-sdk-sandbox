@@ -32,8 +32,8 @@ jobs:
       - name: CocoaPod Install
         run: pod install
         
-      #- name: Run iOS Unit testing for SDK
-      #  run: bundle exec fastlane test
+      - name: Run iOS Unit testing for SDK
+        run: bundle exec fastlane test
       
       - name: Install the Apple certificate
         env:
