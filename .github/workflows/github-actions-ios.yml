@@ -5,6 +5,7 @@ on:
     branches:
       - main
       - master
+      - 'ENG-17-Fastlane-GithubActions-ios-sandbox'
       
 jobs:
   test:
