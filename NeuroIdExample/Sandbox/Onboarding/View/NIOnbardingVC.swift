@@ -20,10 +20,12 @@ final class NIOnbardingVC: UIViewController {
     @IBOutlet weak var employerPhoneNumberlbl: UITextField!
     
     override func viewDidLoad() {
-        sessionidlbl.text = NeuroID.getSessionID()
+        let id = NeuroID.getSessionID()
         super.viewDidLoad()
         setupNavBarImage()
+        setupTextFieldDelegate()
         setupDateBirthPicker()
+        sessionidlbl.text = id
     }
     /// Create and setup the date picker as the input for date birth
     private func setupDateBirthPicker() {
@@ -57,6 +59,20 @@ final class NIOnbardingVC: UIViewController {
         imageView.image = image
         navigationItem.titleView = imageView
     }
+    /// Asing the view delegae to textfields
+    private func setupTextFieldDelegate() {
+        self.sessionidlbl.delegate = self
+        self.firstNamelbl.delegate = self
+        self.lastNamelbl.delegate = self
+        self.dateBirthlbl.delegate = self
+        self.emaillbl.delegate = self
+        self.homeCitylbl.delegate = self
+        self.homeZipCodelbl.delegate = self
+        self.phoneNumberlbl.delegate = self
+        self.employerlbl.delegate = self
+        self.employerAddresslbl.delegate = self
+        self.employerPhoneNumberlbl.delegate = self
+    }
     /// Hide the date picker
     @objc func cancelAction() {
         self.dateBirthlbl.resignFirstResponder()
@@ -74,5 +90,11 @@ final class NIOnbardingVC: UIViewController {
     @IBAction func continueAction(_ sender: Any) {
         let vc = NILoanOptionsVC()
         self.navigationController?.pushViewController(vc, animated: true)
+    }
+}
+extension NIOnbardingVC: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 }
