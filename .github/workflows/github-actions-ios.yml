@@ -5,6 +5,8 @@ on:
     branches:
       - main
       - master
+  repository_dispatch:
+        types: [on-demand-testflight]
       
 jobs:
   test:
