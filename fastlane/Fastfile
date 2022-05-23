@@ -61,7 +61,7 @@ platform :ios do
       teamid: CredentialsManager::AppfileConfig.try_fetch_value(:team_id)
     )
 
-    build_app(workspace: "NeuroIdExample.xcworkspace", scheme: "NeuroIdExample")
+    build_app(workspace: "NeuroIdExample.xcworkspace", scheme: "NeuroIdExample", include_bitcode: false)
     upload_to_testflight
   end
 end
