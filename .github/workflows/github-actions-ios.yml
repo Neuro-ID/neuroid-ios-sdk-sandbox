@@ -57,6 +57,8 @@ jobs:
           # import certificate to keychain
           security import $CERTIFICATE_PATH -P "$P12_PASSWORD" -A -t cert -f pkcs12 -k $KEYCHAIN_PATH
           security list-keychain -d user -s $KEYCHAIN_PATH
+      - name: Updating fastalane
+      - run: bundle update fastlane
         
       - name: Upload iOS app to Testflight
         run: bundle exec fastlane beta
