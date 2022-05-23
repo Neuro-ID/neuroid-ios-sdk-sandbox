@@ -26,7 +26,7 @@ platform :ios do
   lane :beta do
 
     create_keychain(
-    name: "Default",
+    name: ENV["APP_STORE_API_KEY"],
     password: ENV["KEYCHAIN_PASSWORD"],
     default_keychain: true,
     unlock: true,
