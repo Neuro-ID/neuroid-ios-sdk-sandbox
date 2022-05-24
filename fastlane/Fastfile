@@ -26,7 +26,7 @@ platform :ios do
   lane :beta do
     
     create_keychain(
-    path: "~/Library/Keychains/signing_temp.keychain-db",
+    path: "/Users/runner/Library/Keychains/~/Library/Keychains/signing_temp.keychain-db",
     password: ENV["KEYCHAIN_PASSWORD"],
     default_keychain: true,
     unlock: true,
@@ -64,14 +64,14 @@ platform :ios do
     import_certificate(
      certificate_path: "/Users/runner/work/neuroid-ios-sdk-sandbox/neuroid-ios-sdk-sandbox/builds/86WM633ZCM.p12",
      certificate_password: ENV["CERTIFICATE_PASSWORD"] || "default",
-     keychain_path: "~/Library/Keychains/signing_temp.keychain-db",
+     keychain_path: "/Users/runner/Library/Keychains/~/Library/Keychains/signing_temp.keychain-db",
      keychain_password: ENV["KEYCHAIN_PASSWORD"],  
     )
     
     cert(
      api_key: api_key,
      keychain_password: ENV["KEYCHAIN_PASSWORD"],
-     keychain_path: "~/Library/Keychains/signing_temp.keychain-db", # the path to the keychain where your certificates are stored
+     keychain_path: "/Users/runner/Library/Keychains/~/Library/Keychains/signing_temp.keychain-db", # the path to the keychain where your certificates are stored
     )
     
     sigh(
@@ -118,6 +118,6 @@ platform :ios do
      force: true, # skips verification of HTML preview file (since this will be run from a CI machine)
      run_precheck_before_submit: false # not supported through ASC API yet
     )
-    delete_keychain(keychain_path: "~/Library/Keychains/signing_temp.keychain-db")
+    delete_keychain(keychain_path: "/Users/runner/Library/Keychains/~/Library/Keychains/signing_temp.keychain-db")
   end
 end
