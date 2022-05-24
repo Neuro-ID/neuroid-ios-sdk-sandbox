@@ -73,7 +73,17 @@ platform :ios do
       teamid: CredentialsManager::AppfileConfig.try_fetch_value(:team_id)
     )
 
-    build_app(workspace: "NeuroIdExample.xcworkspace", scheme: "NeuroIdExample", include_bitcode: false)
+    build_app(
+      workspace: "NeuroIdExample.xcworkspace", 
+      scheme: "NeuroIdExample", 
+      include_bitcode: false,
+      export_method: "app-store",
+      export_options: {
+        provisioningProfiles: { 
+           "com.neuroid.sandbox" => "com.neuroid.sandbox AppStore 1653083869",
+        }
+      }
+    )
     upload_to_testflight
     delete_keychain(name:"KeyChain-Sandbox")
   end
