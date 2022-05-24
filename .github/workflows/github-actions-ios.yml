@@ -31,13 +31,10 @@ jobs:
          restore-keys: |
           ${{ runner.os }}-pods-
       - name: CocoaPod Install
-        run: pod install
+        run: bundle pod install
         
       - name: Run iOS Unit testing for SDK
         run: bundle exec fastlane test
-      
-      - name: Updating fastalane
-        run: bundle update fastlane
         
       - name: Upload iOS app to Testflight
         run: bundle exec fastlane beta
