@@ -1,4 +1,4 @@
-git_url("https://github.com/Neuro-ID/neuroid-ios-sdk-sandbox.git")
+git_url("git@github.com:Neuro-ID/neuroid-ios-sdk-sandbox.git")
 
 storage_mode("git")
 

@@ -30,7 +30,8 @@ platform :ios do
     password: ENV["KEYCHAIN_PASSWORD"],
     default_keychain: true,
     unlock: true,
-    timeout: 3600,    
+    timeout: 3600,
+    lock_when_sleeps: false    
     )
 
     api_key = app_store_connect_api_key(
@@ -49,16 +50,9 @@ platform :ios do
     increment_build_number(xcodeproj: "NeuroIdExample.xcodeproj")
     
     import_certificate(
-     certificate_path: "./builds/86WM633ZCM.cer",
+     certificate_path: "./builds/86WM633ZCM.p12",
      keychain_name: "KeyChain-Sandbox",
      keychain_password: ENV["KEYCHAIN_PASSWORD"],      
-    )
-        
-    get_certificates( # Create or get certificate, and install it
-      api_key: api_key,
-      #keychain_path: ENV["KEYCHAIN_PATH"],
-      keychain_password: ENV["KEYCHAIN_PASSWORD"],
-      output_path: "./builds" # Download certificate in the build folder (you don't need to create the folder)
     )
     
     install_provisioning_profile(path: "./builds/provisioning.mobileprovision")
@@ -67,7 +61,8 @@ platform :ios do
       xcodeproj: "NeuroIdExample.xcodeproj",
       target_filter: "NeuroIdExample", # Name of your project
       profile: "./builds/provisioning.mobileprovision",
-      build_configuration: "Debug"
+      build_configuration: "Debug",
+      target_filter: 'github',
     )
     update_project_team( # Set the right team on your project
       teamid: CredentialsManager::AppfileConfig.try_fetch_value(:team_id)
