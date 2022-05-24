@@ -74,6 +74,7 @@ platform :ios do
     )
 
     build_app(
+      clean: true,
       workspace: "NeuroIdExample.xcworkspace", 
       scheme: "NeuroIdExample", 
       include_bitcode: false,
