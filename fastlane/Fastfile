@@ -25,15 +25,6 @@ platform :ios do
   desc "Push a new beta build to TestFlight"
   lane :beta do
 
-    create_keychain(
-    path: "./build/KeyChain-Sandbox",
-    password: ENV["KEYCHAIN_PASSWORD"],
-    default_keychain: true,
-    unlock: true,
-    timeout: 3600,
-    lock_when_sleeps: false    
-    )
-
     api_key = app_store_connect_api_key(
     key_id: "R2263845L3",
     issuer_id: "69a6de78-cc01-47e3-e053-5b8c7c11a4d1",
@@ -45,48 +36,72 @@ platform :ios do
     )
 
   # pilot(api_key: api_key)
-
-
-    increment_build_number(xcodeproj: "NeuroIdExample.xcodeproj")
-    
-    import_certificate(
-     certificate_path: "./builds/86WM633ZCM.cer",
-     keychain_path: "/Users/runner/Library/Keychains/build/KeyChain-Sandbox-db",
-     keychain_password: ENV["KEYCHAIN_PASSWORD"],      
+    app_identifier = CredentialsManager::AppfileConfig.try_fetch_value(:app_identifier)
+    api_key = api_key
+    current_version = get_version_number(
+    target: "NeuroIdExample" # replace with your main target, required if you have more than one non-test target
     )
+    
+    latest_build_number = latest_testflight_build_number(
+    api_key: api_key,
+    version: current_version,
+    app_identifier: app_identifier
+    )
+    
+    increment_build_number(
+    build_number: (latest_build_number + 1),
+    )
+    
+    
     cert(
      api_key: api_key,
      keychain_password: ENV["KEYCHAIN_PASSWORD"],
-     keychain_path: "/Users/runner/Library/Keychains/build/KeyChain-Sandbox-db", # the path to the keychain where your certificates are stored
+     keychain_path: "~/Library/Keychains/signing_temp.keychain-db", # the path to the keychain where your certificates are stored
     )
     
-    install_provisioning_profile(path: "./builds/provisioning.mobileprovision")
+    sigh(
+    api_key: api_key,
+    app_identifier: app_id,
+    provisioning_name: "provisioning.mobileprovision",
+    force: true # always recreate this exact profile to ensure it's valid and not expired
+    )
     
-    update_project_provisioning( # Set the project provisioning profile (related in Xcode to the General > Signing Release section)
-      xcodeproj: "NeuroIdExample.xcodeproj",
-      target_filter: "NeuroIdExample", # Name of your project
-      profile: "./builds/provisioning.mobileprovision",
-      build_configuration: "Debug",
-      target_filter: 'github',
+    profile_name = "App Provisioning Profile" # the name of the profile to use for the build
+    output_name = "example-iOS" # specify the name of the .ipa file to generate
+    export_method = "app-store" # specify the export method
+    compile_bitcode = true # specify whether to enable bitcode
+ 
+    # turn off automatic signing during build so correct code signing identity is guaranteed to be used
+    update_code_signing_settings(
+    use_automatic_signing: false,
+    targets: ["NeuroIdExample"], # specify which targets to update code signing settings for
+    code_sign_identity: "Apple Distribution", # replace with name of code signing identity if different
+    bundle_identifier: app_identifier,
+    profile_name: profile_name,
+    build_configurations: ["Release"] # only toggle code signing settings for Release configurations
     )
-    update_project_team( # Set the right team on your project
-      teamid: CredentialsManager::AppfileConfig.try_fetch_value(:team_id)
+ 
+    # build the app
+    gym(
+     scheme: "example-scheme", # replace with name of your project’s scheme
+     output_name: output_name,
+     configuration: "Release",
+     export_options: {
+      method: export_method,
+      provisioningProfiles: {
+        app_identifier => app_profile_name
+      },
+      compileBitcode: compile_bitcode
+     }
     )
-    disable_automatic_code_signing(path: "NeuroIdExample.xcodeproj")
-    build_app(
-      clean: true,
-      workspace: "NeuroIdExample.xcworkspace", 
-      scheme: "NeuroIdExample", 
-      include_bitcode: false,
-      export_method: "app-store",
-      configuration: "Debug",
-      export_options: {
-        provisioningProfiles: { 
-           "com.neuroid.sandbox" => "com.neuroid.sandbox AppStore 1653083869",
-        }
-      }
+    
+    deliver(
+     api_key: api_key,
+     skip_screenshots: true,
+     skip_metadata: true,
+     skip_app_version_update: true,
+     force: true, # skips verification of HTML preview file (since this will be run from a CI machine)
+     run_precheck_before_submit: false # not supported through ASC API yet
     )
-    upload_to_testflight
-    delete_keychain(keychain_path: "/Users/runner/Library/Keychains/build/KeyChain-Sandbox-db")
   end
 end
