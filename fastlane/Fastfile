@@ -24,7 +24,6 @@ platform :ios do
   
   desc "Push a new beta build to TestFlight"
   lane :beta do
-    delete_keychain(name: "KeyChain-Sandbox")
     create_keychain(
     name: "KeyChain-Sandbox",
     password: ENV["KEYCHAIN_PASSWORD"],
