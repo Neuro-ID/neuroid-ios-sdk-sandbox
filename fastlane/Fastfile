@@ -26,7 +26,7 @@ platform :ios do
   lane :beta do
 
     create_keychain(
-    name: "KeyChain-Sandbox",
+    path: "./build/KeyChain-Sandbox",
     password: ENV["KEYCHAIN_PASSWORD"],
     default_keychain: true,
     unlock: true,
@@ -52,7 +52,7 @@ platform :ios do
     cert(
      api_key: api_key,
      keychain_password: ENV["KEYCHAIN_PASSWORD"],
-     keychain_path: "KeyChain-Sandbox", # the path to the keychain where your certificates are stored
+     keychain_path: "./build/KeyChain-Sandbox", # the path to the keychain where your certificates are stored
     )
     
     install_provisioning_profile(path: "./builds/provisioning.mobileprovision")
@@ -82,6 +82,6 @@ platform :ios do
       }
     )
     upload_to_testflight
-    delete_keychain(name:"KeyChain-Sandbox")
+    delete_keychain(keychain_path: "./build/KeyChain-Sandbox")
   end
 end
