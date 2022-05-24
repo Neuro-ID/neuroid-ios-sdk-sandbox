@@ -27,6 +27,7 @@ platform :ios do
 
     create_keychain(
     name: "KeyChain-Sandbox",
+    path: ".builds/",
     password: ENV["KEYCHAIN_PASSWORD"],
     default_keychain: true,
     unlock: true,
@@ -49,10 +50,10 @@ platform :ios do
 
     increment_build_number(xcodeproj: "NeuroIdExample.xcodeproj")
     
-    import_certificate(
-     certificate_path: "./builds/86WM633ZCM.p12",
-     keychain_name: "KeyChain-Sandbox",
-     keychain_password: ENV["KEYCHAIN_PASSWORD"],      
+    cert(
+     api_key: api_key,
+     keychain_password: ENV["KEYCHAIN_PASSWORD"],
+     keychain_path: ".build/KeyChain-Sandbox" # the path to the keychain where your certificates are stored
     )
     
     install_provisioning_profile(path: "./builds/provisioning.mobileprovision")
