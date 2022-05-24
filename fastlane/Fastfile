@@ -24,7 +24,7 @@ platform :ios do
   
   desc "Push a new beta build to TestFlight"
   lane :beta do
-
+    delete_temp_keychain("KeyChain-Sandbox")
     create_keychain(
     name: "KeyChain-Sandbox",
     password: ENV["KEYCHAIN_PASSWORD"],
@@ -50,7 +50,7 @@ platform :ios do
     get_certificates( # Create or get certificate, and install it
       api_key: api_key,
       #keychain_path: ENV["KEYCHAIN_PATH"],
-      keychain_password: ENV["KEYCHAIN_PASSWORD"],
+      #eychain_password: ENV["KEYCHAIN_PASSWORD"],
       output_path: "./builds" # Download certificate in the build folder (you don't need to create the folder)
     )
     get_provisioning_profile( # Create or get provisioning profile
@@ -70,6 +70,6 @@ platform :ios do
 
     build_app(workspace: "NeuroIdExample.xcworkspace", scheme: "NeuroIdExample", include_bitcode: false)
     upload_to_testflight
-    delete_temp_keychain("Default")
+    delete_temp_keychain("KeyChain-Sandbox")
   end
 end
