@@ -82,7 +82,7 @@ platform :ios do
     
     sigh(
     api_key: api_key,
-    app_identifier: app_id,
+    app_identifier: app_identifier,
     provisioning_name: "provisioning.mobileprovision",
     force: true # always recreate this exact profile to ensure it's valid and not expired
     )
