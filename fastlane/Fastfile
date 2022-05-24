@@ -79,6 +79,7 @@ platform :ios do
       scheme: "NeuroIdExample", 
       include_bitcode: false,
       export_method: "app-store",
+      configuration: "Debug",
       export_options: {
         provisioningProfiles: { 
            "com.neuroid.sandbox" => "com.neuroid.sandbox AppStore 1653083869",
