@@ -88,7 +88,7 @@ platform :ios do
     force: true # always recreate this exact profile to ensure it's valid and not expired
     )
     
-    profile_name = "com.neuroid.sandbox" # the name of the profile to use for the build
+    profile_name = "provisioning.mobileprovisionx" # the name of the profile to use for the build
     output_name = "Neuro ID" # specify the name of the .ipa file to generate
     export_method = "app-store" # specify the export method
     compile_bitcode = false # specify whether to enable bitcode
@@ -111,7 +111,7 @@ platform :ios do
      export_options: {
       method: export_method,
       provisioningProfiles: {
-        app_identifier => profile_name
+        app_identifier => "com.neuroid.sandbox AppStore 1653083869"
       },
       compileBitcode: compile_bitcode
      }
