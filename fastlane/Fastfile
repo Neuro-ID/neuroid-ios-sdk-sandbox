@@ -74,6 +74,7 @@ platform :ios do
      keychain_path: "/Users/runner/Library/Keychains/Library/Keychains/signing_temp.keychain-db",
      keychain_password: ENV["KEYCHAIN_PASSWORD"],  
     )
+    install_provisioning_profile(path: "/Users/runner/work/neuroid-ios-sdk-sandbox/neuroid-ios-sdk-sandbox/builds/provisioning.mobileprovision")
     cert(
      api_key: api_key,
      keychain_password: ENV["KEYCHAIN_PASSWORD"],
