@@ -35,8 +35,8 @@
 		26FC4C5226961E3600CC3292 /* RangeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FC4C3F26961DE600CC3292 /* RangeSlider.swift */; };
 		26FC4C5326961E3600CC3292 /* RangeSliderTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FC4C4126961DE600CC3292 /* RangeSliderTrack.swift */; };
 		26FC4C5426961E3600CC3292 /* RangeSliderKnob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FC4C4026961DE600CC3292 /* RangeSliderKnob.swift */; };
+		534F8D76478EC1C34CAD7D02 /* libPods-NeuroIdExampleUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32F8B814B0D1BDDEC558D98F /* libPods-NeuroIdExampleUITests.a */; };
 		9EB033D847C50F6A665C85E9 /* Pods_NeuroIdExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFB42D28D7AAD52F8B3F1724 /* Pods_NeuroIdExample.framework */; };
-		B74345A7BECD5264C0A060C1 /* Pods_NeuroIdExampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7DF32432AF4FDD312CB9662 /* Pods_NeuroIdExampleUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,12 +81,12 @@
 		26FC4C3F26961DE600CC3292 /* RangeSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RangeSlider.swift; path = SwiftRangeSlider/RangeSlider.swift; sourceTree = "<group>"; };
 		26FC4C4026961DE600CC3292 /* RangeSliderKnob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RangeSliderKnob.swift; path = SwiftRangeSlider/RangeSliderKnob.swift; sourceTree = "<group>"; };
 		26FC4C4126961DE600CC3292 /* RangeSliderTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RangeSliderTrack.swift; path = SwiftRangeSlider/RangeSliderTrack.swift; sourceTree = "<group>"; };
+		32F8B814B0D1BDDEC558D98F /* libPods-NeuroIdExampleUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NeuroIdExampleUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CBCEEFD8650C11FAD6C3AAA /* Pods-NeuroIdExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeuroIdExample.release.xcconfig"; path = "Target Support Files/Pods-NeuroIdExample/Pods-NeuroIdExample.release.xcconfig"; sourceTree = "<group>"; };
 		BA1165DD0499B6B953724AA0 /* Pods-NeuroIdExampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeuroIdExampleUITests.release.xcconfig"; path = "Target Support Files/Pods-NeuroIdExampleUITests/Pods-NeuroIdExampleUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BFB42D28D7AAD52F8B3F1724 /* Pods_NeuroIdExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NeuroIdExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0CD5D8BC9C7DDE95CF59EBD /* Pods-NeuroIdExampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeuroIdExampleUITests.debug.xcconfig"; path = "Target Support Files/Pods-NeuroIdExampleUITests/Pods-NeuroIdExampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C44E2342C74ECCD0236A1785 /* Pods-NeuroIdExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeuroIdExample.debug.xcconfig"; path = "Target Support Files/Pods-NeuroIdExample/Pods-NeuroIdExample.debug.xcconfig"; sourceTree = "<group>"; };
-		E7DF32432AF4FDD312CB9662 /* Pods_NeuroIdExampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NeuroIdExampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B74345A7BECD5264C0A060C1 /* Pods_NeuroIdExampleUITests.framework in Frameworks */,
+				534F8D76478EC1C34CAD7D02 /* libPods-NeuroIdExampleUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +288,7 @@
 			isa = PBXGroup;
 			children = (
 				BFB42D28D7AAD52F8B3F1724 /* Pods_NeuroIdExample.framework */,
-				E7DF32432AF4FDD312CB9662 /* Pods_NeuroIdExampleUITests.framework */,
+				32F8B814B0D1BDDEC558D98F /* libPods-NeuroIdExampleUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -315,7 +315,6 @@
 				07EA59A928358EF400539C74 /* Sources */,
 				07EA59AA28358EF400539C74 /* Frameworks */,
 				07EA59AB28358EF400539C74 /* Resources */,
-				27F1F2F6E89940C4FE69E5E8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -410,23 +409,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		27F1F2F6E89940C4FE69E5E8 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NeuroIdExampleUITests/Pods-NeuroIdExampleUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NeuroIdExampleUITests/Pods-NeuroIdExampleUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NeuroIdExampleUITests/Pods-NeuroIdExampleUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		9967CD29C6DE0E2E6E6752FA /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
