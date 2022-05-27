@@ -1,10 +1,6 @@
 name: Github Actions for iOS NeuroID SDK Sandbox
 
 on:
-  push:
-    branches:
-      - main
-      - master
 
   repository_dispatch:
         types: [on-demand-testflight]
@@ -32,6 +28,15 @@ jobs:
           ${{ runner.os }}-pods-
       - name: CocoaPod Install
         run: pod install
+        
+      - name: Updating pods files
+        run: |
+          git config --global user.email robot@neuro-id.com
+          git config --global user.name robot
+          git status
+          git add *
+          git commit -m "Updating Pods files"
+          git push
         
       - name: Run iOS Unit testing for SDK
         run: bundle exec fastlane test
