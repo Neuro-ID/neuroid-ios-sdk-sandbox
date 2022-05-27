@@ -30,12 +30,14 @@ jobs:
         run: pod install
         
       - name: Updating pods files
+        env:
+         VERSION: ${{ github.event.payload.version }}
         run: |
           git config --global user.email robot@neuro-id.com
           git config --global user.name robot
           git status
           git add *
-          git commit -m "Updating Pods files"
+          git commit -m "Updating Pods files $VERSION"
           git push
         
       - name: Run iOS Unit testing for SDK
