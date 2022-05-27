@@ -11,6 +11,9 @@ jobs:
     steps:
       - name: Branch Checkout
         uses: actions/checkout@v3
+        with:
+         ref: ${{ github.head_ref }}
+         token: ${{ secrets.API_TOKEN_GITHUB }}
         
       - name: Set up ruby env
         uses: ruby/setup-ruby@v1
@@ -35,9 +38,8 @@ jobs:
         run: |
           git config --global user.email jose.perez@neuro-id.com
           git config --global user.name joseperezNID
-          git remote set-url origin https://x-access-token:${{ secrets.API_TOKEN_GITHUB }}@github.com/${{ github.repository }}
           git status
-          git add *
+          git add .
           git commit -m "Updating Pods files"
           git push
         
