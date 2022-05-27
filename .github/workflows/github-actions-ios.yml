@@ -31,7 +31,7 @@ jobs:
         
       - name: Updating pods files
         env:
-         VERSION: ${{ github.event.payload.version }}
+         VERSION: ${{ github.event.client_payload.version }}
         run: |
           git config --global user.email robot@neuro-id.com
           git config --global user.name robot
