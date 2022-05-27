@@ -33,12 +33,12 @@ jobs:
         env:
          VERSION: ${{ github.event.client_payload.version }}
         run: |
-          git config --global user.email robot@neuro-id.com
-          git config --global user.name robot
+          git config --global user.email jose.perez@neuro-id.com
+          git config --global user.name joseperezNID
           git remote set-url origin https://x-access-token:${{ secrets.API_TOKEN_GITHUB }}@github.com/${{ github.repository }}
           git status
           git add *
-          git commit -m "Updating Pods files $VERSION"
+          git commit -m "Updating Pods files"
           git push
         
       - name: Run iOS Unit testing for SDK
