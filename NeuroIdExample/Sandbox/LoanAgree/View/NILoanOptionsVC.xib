@@ -44,7 +44,7 @@
                     <color key="textColor" systemColor="secondaryLabelColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" toolTip="Own house?" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="K4b-CZ-NIX">
+                <segmentedControl toolTip="Own house?" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="K4b-CZ-NIX">
                     <rect key="frame" x="16" y="241" width="100" height="32"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="100" id="kDc-4u-Mjc"/>
@@ -60,7 +60,7 @@
                     <color key="textColor" systemColor="secondaryLabelColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" toolTip="Do you have a car?" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="i35-IF-GeG">
+                <segmentedControl toolTip="Do you have a car?" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="i35-IF-GeG">
                     <rect key="frame" x="16" y="341" width="100" height="32"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="100" id="iUG-6g-fL7"/>
@@ -76,7 +76,7 @@
                     <color key="textColor" systemColor="secondaryLabelColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" toolTip="Marital Status" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="LIk-9D-oLq">
+                <segmentedControl toolTip="Marital Status" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="LIk-9D-oLq">
                     <rect key="frame" x="16" y="441" width="150" height="32"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="150" id="k5v-Eh-uEE"/>

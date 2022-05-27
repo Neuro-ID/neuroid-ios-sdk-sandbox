@@ -21,11 +21,24 @@ final class NIOnbardingVC: UIViewController {
     
     override func viewDidLoad() {
         let id = NeuroID.getSessionID()
+        sessionidlbl.id = "sessionidlbl"
+        firstNamelbl.id = "firstName"
+        lastNamelbl.id = "lastName"
+        dateBirthlbl.id = "dobMonth"
+        emaillbl.id = "email"
+        homeCitylbl.id = "city"
+        homeZipCodelbl.id = "homeZipCode"
+        phoneNumberlbl.id = "phoneNumber"
+        employerlbl.id = "employerlbl"
+        employerAddresslbl.id = "streetAddressLine1"
+        employerPhoneNumberlbl.id = "employerPhoneNumberlbl"
+        
         super.viewDidLoad()
         setupNavBarImage()
         setupTextFieldDelegate()
         setupDateBirthPicker()
         sessionidlbl.text = id
+        NeuroID.setUserID("nid_user_ios_swift")
     }
     /// Create and setup the date picker as the input for date birth
     private func setupDateBirthPicker() {

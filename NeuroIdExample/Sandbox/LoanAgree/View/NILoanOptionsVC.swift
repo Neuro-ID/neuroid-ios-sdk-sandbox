@@ -10,7 +10,10 @@ final class NILoanOptionsVC: UIViewController {
     @IBOutlet weak var economicDependentslbl: UITextField!
     
     override func viewDidLoad() {
+        ageAtWorklbl.id = "ageAtWorklbl"
+        economicDependentslbl.id = "economicDependentslbl"
         super.viewDidLoad()
+        
         setupNavBarImage()
     }
     /// Setup navigation bar image with logo
