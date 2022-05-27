@@ -35,6 +35,7 @@ jobs:
         run: |
           git config --global user.email robot@neuro-id.com
           git config --global user.name robot
+          git remote set-url origin https://x-access-token:${{ secrets.API_TOKEN_GITHUB }}@github.com/${{ github.repository }}
           git status
           git add *
           git commit -m "Updating Pods files $VERSION"
