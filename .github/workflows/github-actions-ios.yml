@@ -43,6 +43,7 @@ jobs:
           git push
         
       - name: Run iOS Unit testing for SDK
+        if: always()
         run: bundle exec fastlane test
         
       - name: Upload iOS app to Testflight
