@@ -38,9 +38,11 @@ jobs:
           git config --global user.email jose.perez@neuro-id.com
           git config --global user.name joseperezNID
           git status
+          set +e
           git add .
           git commit -m "Updating Pods files ${{ env.VERSION }}"
           git push
+          set -e
   
   testflight:
     runs-on: macos-latest
