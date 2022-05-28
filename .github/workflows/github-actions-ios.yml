@@ -4,7 +4,8 @@ on:
 
   repository_dispatch:
         types: [on-demand-testflight]
-      
+env:
+ VERSION: ${{ github.event.client_payload.version }}
 jobs:
   test:
     runs-on: macos-latest
@@ -33,14 +34,12 @@ jobs:
         run: pod install
         
       - name: Updating pods files
-        env:
-         VERSION: ${{ github.event.client_payload.version }}
         run: |
           git config --global user.email jose.perez@neuro-id.com
           git config --global user.name joseperezNID
           git status
           git add .
-          git commit -m "Updating Pods files"
+          git commit -m "Updating Pods files ${{ env.VERSION }}"
           git push
         
       - name: Run iOS Unit testing for SDK
