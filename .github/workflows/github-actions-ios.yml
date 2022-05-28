@@ -7,7 +7,7 @@ on:
 env:
  VERSION: ${{ github.event.client_payload.version }}
 jobs:
-  test:
+  updating_files:
     runs-on: macos-latest
     steps:
       - name: Branch Checkout
@@ -41,9 +41,34 @@ jobs:
           git add .
           git commit -m "Updating Pods files ${{ env.VERSION }}"
           git push
+  
+  testflight:
+    runs-on: macos-latest
+    steps:
+      - name: Branch Checkout
+        uses: actions/checkout@v3
+        with:
+         ref: ${{ github.head_ref }}
+        
+      - name: Set up ruby env
+        uses: ruby/setup-ruby@v1
+        with:
+         ruby-version: 2.7.2
+        
+      - name: Bundle Install
+        run: bundle install
+        
+      - uses: actions/cache@v2
+        with:
+         path: Pods
+         key: ${{ runner.os }}-pods-${{ hashFiles('**/Podfile.lock') }}
+         restore-keys: |
+          ${{ runner.os }}-pods-
+      
+      - name: CocoaPod Install
+        run: pod install
         
       - name: Run iOS Unit testing for SDK
-        if: always()
         run: bundle exec fastlane test
         
       - name: Upload iOS app to Testflight
