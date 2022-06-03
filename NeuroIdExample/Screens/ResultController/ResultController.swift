@@ -1,5 +1,5 @@
 import UIKit
-import NeuroID
+import Neuro_ID
 
 class ResultController: UITableViewController {
     var datasource = [Hotel]() {
