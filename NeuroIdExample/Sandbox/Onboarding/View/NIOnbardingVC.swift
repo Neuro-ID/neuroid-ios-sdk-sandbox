@@ -5,7 +5,7 @@
 //  Created by jose perez on 12/05/22.
 //
 import UIKit
-import NeuroID
+import Neuro_ID
 final class NIOnbardingVC: UIViewController {
     @IBOutlet weak var sessionidlbl: UITextField!
     @IBOutlet weak var firstNamelbl: UITextField!

@@ -1,5 +1,5 @@
 import UIKit
-import NeuroID
+import Neuro_ID
 
 class SearchCityController: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!

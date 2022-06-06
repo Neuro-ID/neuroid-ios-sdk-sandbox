@@ -57,6 +57,9 @@ platform :ios do
     version: current_version,
     app_identifier: app_identifier
     )
+
+    set_info_plist_value(path: "./Info.plist", key: "InternalCurrentVersion",
+    value: ENV["InternalCurrentVersion"])
     
     increment_build_number(
     build_number: (latest_build_number + 1),

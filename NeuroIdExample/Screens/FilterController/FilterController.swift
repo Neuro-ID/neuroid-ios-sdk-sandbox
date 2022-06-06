@@ -1,5 +1,5 @@
 import UIKit
-import NeuroID
+import Neuro_ID
 
 class FilterController: UIViewController {
     @IBOutlet weak var star1View: UIView!
