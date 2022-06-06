@@ -1,6 +1,0 @@
-module NeuroID {
-  umbrella header "NeuroID-library-umbrella.h"
-
-  export *
-  module * { export * }
-}
