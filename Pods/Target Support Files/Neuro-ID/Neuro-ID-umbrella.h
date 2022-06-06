@@ -10,7 +10,8 @@
 #endif
 #endif
 
+#import "NeuroID.h"
 
-FOUNDATION_EXPORT double AlamofireVersionNumber;
-FOUNDATION_EXPORT const unsigned char AlamofireVersionString[];
+FOUNDATION_EXPORT double Neuro_IDVersionNumber;
+FOUNDATION_EXPORT const unsigned char Neuro_IDVersionString[];
 
