@@ -17,7 +17,6 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   Neuro-ID:
-    :commit: bfa971095a700c49138e8a22c1a630ae3212e16e
     :git: https://github.com/Neuro-ID/neuroid-ios-sdk.git
     :tag: 1.3.0
 
