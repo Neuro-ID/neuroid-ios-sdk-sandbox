@@ -60,7 +60,11 @@ platform :ios do
 
     set_info_plist_value(path: "/Users/runner/work/neuroid-ios-sdk-sandbox/neuroid-ios-sdk-sandbox/NeuroIdExample/Info.plist", key: "InternalCurrentVersion",
     value: ENV["InternalCurrentVersion"])
+
+    currentVersion = get_info_plist_value(path: "/Users/runner/work/neuroid-ios-sdk-sandbox/neuroid-ios-sdk-sandbox/NeuroIdExample/Info.plist", key: "InternalCurrentVersion",
+    value: ENV["InternalCurrentVersion"])
     
+    UI.message "Current internal version updated: #{ currentVersion }"
     increment_build_number(
     build_number: (latest_build_number + 1),
     )
