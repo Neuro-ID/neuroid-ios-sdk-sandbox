@@ -24,7 +24,7 @@ platform :ios do
   desc "Update internal version"
   lane :update_version do
     set_info_plist_value(
-    path: "/Users/runner/work/neuroid-ios-sdk-sandbox/neuroid-ios-sdk-sandbox/NeuroIdExample/Info.plist"
+    path: "/Users/runner/work/neuroid-ios-sdk-sandbox/neuroid-ios-sdk-sandbox/NeuroIdExample/Info.plist",
     key: "InternalCurrentVersion",
     value: ENV["InternalCurrentVersion"])
   end
