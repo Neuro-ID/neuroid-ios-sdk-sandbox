@@ -23,6 +23,14 @@ For _fastlane_ installation instructions, see [Installing _fastlane_](https://do
 
 Running UI testing
 
+### ios update_version
+
+```sh
+[bundle exec] fastlane ios update_version
+```
+
+Update internal version
+
 ### ios beta
 
 ```sh
