@@ -33,6 +33,11 @@ jobs:
       - name: CocoaPod Install
         run: pod install
         
+      - name: Update Current Version
+        run: bundle exec fastlane update_version
+        env:
+         InternalCurrentVersion: ${{ env.VERSION }}
+        
       - name: Updating pods files
         run: |
           git config --global user.email jose.perez@neuro-id.com
@@ -77,4 +82,5 @@ jobs:
         run: bundle exec fastlane beta
         env:
          APP_STORE_API_KEY: ${{ secrets.APP_STORE_API_KEY }}
-         KEYCHAIN_PASSWORD: ${{ secrets.DIST_CERT_BASE64 }}         
+         KEYCHAIN_PASSWORD: ${{ secrets.DIST_CERT_BASE64 }}
+         InternalCurrentVersion: ${{ env.VERSION }}

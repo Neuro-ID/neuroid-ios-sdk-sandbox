@@ -35,8 +35,8 @@
 		26FC4C5226961E3600CC3292 /* RangeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FC4C3F26961DE600CC3292 /* RangeSlider.swift */; };
 		26FC4C5326961E3600CC3292 /* RangeSliderTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FC4C4126961DE600CC3292 /* RangeSliderTrack.swift */; };
 		26FC4C5426961E3600CC3292 /* RangeSliderKnob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FC4C4026961DE600CC3292 /* RangeSliderKnob.swift */; };
-		534F8D76478EC1C34CAD7D02 /* libPods-NeuroIdExampleUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32F8B814B0D1BDDEC558D98F /* libPods-NeuroIdExampleUITests.a */; };
-		9EB033D847C50F6A665C85E9 /* Pods_NeuroIdExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFB42D28D7AAD52F8B3F1724 /* Pods_NeuroIdExample.framework */; };
+		5DE4BBDCF0F1A352BED60A99 /* Pods_NeuroIdExampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 708E142E086725EF192ED122 /* Pods_NeuroIdExampleUITests.framework */; };
+		7E5B571B3CE4C80B1949A0E1 /* Pods_NeuroIdExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E376676636FC4C115943F79A /* Pods_NeuroIdExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,12 +81,12 @@
 		26FC4C3F26961DE600CC3292 /* RangeSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RangeSlider.swift; path = SwiftRangeSlider/RangeSlider.swift; sourceTree = "<group>"; };
 		26FC4C4026961DE600CC3292 /* RangeSliderKnob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RangeSliderKnob.swift; path = SwiftRangeSlider/RangeSliderKnob.swift; sourceTree = "<group>"; };
 		26FC4C4126961DE600CC3292 /* RangeSliderTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RangeSliderTrack.swift; path = SwiftRangeSlider/RangeSliderTrack.swift; sourceTree = "<group>"; };
-		32F8B814B0D1BDDEC558D98F /* libPods-NeuroIdExampleUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NeuroIdExampleUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8CBCEEFD8650C11FAD6C3AAA /* Pods-NeuroIdExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeuroIdExample.release.xcconfig"; path = "Target Support Files/Pods-NeuroIdExample/Pods-NeuroIdExample.release.xcconfig"; sourceTree = "<group>"; };
-		BA1165DD0499B6B953724AA0 /* Pods-NeuroIdExampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeuroIdExampleUITests.release.xcconfig"; path = "Target Support Files/Pods-NeuroIdExampleUITests/Pods-NeuroIdExampleUITests.release.xcconfig"; sourceTree = "<group>"; };
-		BFB42D28D7AAD52F8B3F1724 /* Pods_NeuroIdExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NeuroIdExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C0CD5D8BC9C7DDE95CF59EBD /* Pods-NeuroIdExampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeuroIdExampleUITests.debug.xcconfig"; path = "Target Support Files/Pods-NeuroIdExampleUITests/Pods-NeuroIdExampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		C44E2342C74ECCD0236A1785 /* Pods-NeuroIdExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeuroIdExample.debug.xcconfig"; path = "Target Support Files/Pods-NeuroIdExample/Pods-NeuroIdExample.debug.xcconfig"; sourceTree = "<group>"; };
+		513A5C870BAA03C8F0642E5D /* Pods-NeuroIdExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeuroIdExample.debug.xcconfig"; path = "Target Support Files/Pods-NeuroIdExample/Pods-NeuroIdExample.debug.xcconfig"; sourceTree = "<group>"; };
+		708E142E086725EF192ED122 /* Pods_NeuroIdExampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NeuroIdExampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		827E8E946C0E4B9BDF87E996 /* Pods-NeuroIdExampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeuroIdExampleUITests.debug.xcconfig"; path = "Target Support Files/Pods-NeuroIdExampleUITests/Pods-NeuroIdExampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		991C1CA17CC626A6CEE158F7 /* Pods-NeuroIdExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeuroIdExample.release.xcconfig"; path = "Target Support Files/Pods-NeuroIdExample/Pods-NeuroIdExample.release.xcconfig"; sourceTree = "<group>"; };
+		E186292AB50DEA9766A94B8A /* Pods-NeuroIdExampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeuroIdExampleUITests.release.xcconfig"; path = "Target Support Files/Pods-NeuroIdExampleUITests/Pods-NeuroIdExampleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E376676636FC4C115943F79A /* Pods_NeuroIdExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NeuroIdExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				534F8D76478EC1C34CAD7D02 /* libPods-NeuroIdExampleUITests.a in Frameworks */,
+				5DE4BBDCF0F1A352BED60A99 /* Pods_NeuroIdExampleUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,7 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9EB033D847C50F6A665C85E9 /* Pods_NeuroIdExample.framework in Frameworks */,
+				7E5B571B3CE4C80B1949A0E1 /* Pods_NeuroIdExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,7 +203,7 @@
 				07EA59AE28358EF400539C74 /* NeuroIdExampleUITests */,
 				26BCF366268DB5FC0002C289 /* Products */,
 				26BCF367268DB5FC0002C289 /* NeuroIdExample */,
-				D23D78155C4222080A359DB7 /* Frameworks */,
+				FC777EC656F8E8F837C6DBDA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -284,24 +284,24 @@
 			path = Screens;
 			sourceTree = "<group>";
 		};
-		D23D78155C4222080A359DB7 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				BFB42D28D7AAD52F8B3F1724 /* Pods_NeuroIdExample.framework */,
-				32F8B814B0D1BDDEC558D98F /* libPods-NeuroIdExampleUITests.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		E331B1B6ABDA090EE7DA3887 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C44E2342C74ECCD0236A1785 /* Pods-NeuroIdExample.debug.xcconfig */,
-				8CBCEEFD8650C11FAD6C3AAA /* Pods-NeuroIdExample.release.xcconfig */,
-				C0CD5D8BC9C7DDE95CF59EBD /* Pods-NeuroIdExampleUITests.debug.xcconfig */,
-				BA1165DD0499B6B953724AA0 /* Pods-NeuroIdExampleUITests.release.xcconfig */,
+				513A5C870BAA03C8F0642E5D /* Pods-NeuroIdExample.debug.xcconfig */,
+				991C1CA17CC626A6CEE158F7 /* Pods-NeuroIdExample.release.xcconfig */,
+				827E8E946C0E4B9BDF87E996 /* Pods-NeuroIdExampleUITests.debug.xcconfig */,
+				E186292AB50DEA9766A94B8A /* Pods-NeuroIdExampleUITests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		FC777EC656F8E8F837C6DBDA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E376676636FC4C115943F79A /* Pods_NeuroIdExample.framework */,
+				708E142E086725EF192ED122 /* Pods_NeuroIdExampleUITests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,10 +311,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 07EA59B728358EF400539C74 /* Build configuration list for PBXNativeTarget "NeuroIdExampleUITests" */;
 			buildPhases = (
-				F8A40AAC48D869D1DCF86CD2 /* [CP] Check Pods Manifest.lock */,
+				6CCF243D086A613233D5E477 /* [CP] Check Pods Manifest.lock */,
 				07EA59A928358EF400539C74 /* Sources */,
 				07EA59AA28358EF400539C74 /* Frameworks */,
 				07EA59AB28358EF400539C74 /* Resources */,
+				11E8127A122773BE30825EA0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -330,11 +331,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 26BCF379268DB5FD0002C289 /* Build configuration list for PBXNativeTarget "NeuroIdExample" */;
 			buildPhases = (
-				A40C33A1329B92315A4050BB /* [CP] Check Pods Manifest.lock */,
+				F0F5BB042186D84BC13FA683 /* [CP] Check Pods Manifest.lock */,
 				26BCF361268DB5FC0002C289 /* Sources */,
 				26BCF362268DB5FC0002C289 /* Frameworks */,
 				26BCF363268DB5FC0002C289 /* Resources */,
-				9967CD29C6DE0E2E6E6752FA /* [CP] Embed Pods Frameworks */,
+				203BCAEF9C42B5F81F1BA6E9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -409,7 +410,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9967CD29C6DE0E2E6E6752FA /* [CP] Embed Pods Frameworks */ = {
+		11E8127A122773BE30825EA0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NeuroIdExampleUITests/Pods-NeuroIdExampleUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NeuroIdExampleUITests/Pods-NeuroIdExampleUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NeuroIdExampleUITests/Pods-NeuroIdExampleUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		203BCAEF9C42B5F81F1BA6E9 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -426,29 +444,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NeuroIdExample/Pods-NeuroIdExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A40C33A1329B92315A4050BB /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-NeuroIdExample-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F8A40AAC48D869D1DCF86CD2 /* [CP] Check Pods Manifest.lock */ = {
+		6CCF243D086A613233D5E477 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -464,6 +460,28 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-NeuroIdExampleUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0F5BB042186D84BC13FA683 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NeuroIdExample-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -540,7 +558,7 @@
 /* Begin XCBuildConfiguration section */
 		07EA59B528358EF400539C74 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C0CD5D8BC9C7DDE95CF59EBD /* Pods-NeuroIdExampleUITests.debug.xcconfig */;
+			baseConfigurationReference = 827E8E946C0E4B9BDF87E996 /* Pods-NeuroIdExampleUITests.debug.xcconfig */;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CODE_SIGN_STYLE = Automatic;
@@ -562,7 +580,7 @@
 		};
 		07EA59B628358EF400539C74 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BA1165DD0499B6B953724AA0 /* Pods-NeuroIdExampleUITests.release.xcconfig */;
+			baseConfigurationReference = E186292AB50DEA9766A94B8A /* Pods-NeuroIdExampleUITests.release.xcconfig */;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CODE_SIGN_STYLE = Automatic;
@@ -698,7 +716,7 @@
 		};
 		26BCF37A268DB5FD0002C289 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C44E2342C74ECCD0236A1785 /* Pods-NeuroIdExample.debug.xcconfig */;
+			baseConfigurationReference = 513A5C870BAA03C8F0642E5D /* Pods-NeuroIdExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -722,7 +740,7 @@
 		};
 		26BCF37B268DB5FD0002C289 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8CBCEEFD8650C11FAD6C3AAA /* Pods-NeuroIdExample.release.xcconfig */;
+			baseConfigurationReference = 991C1CA17CC626A6CEE158F7 /* Pods-NeuroIdExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

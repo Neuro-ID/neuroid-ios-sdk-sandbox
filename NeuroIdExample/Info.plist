@@ -20,6 +20,8 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>10</string>
+	<key>InternalCurrentVersion</key>
+	<string>4.ios-1.3.0-2-g6b07848 </string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UIApplicationSceneManifest</key>

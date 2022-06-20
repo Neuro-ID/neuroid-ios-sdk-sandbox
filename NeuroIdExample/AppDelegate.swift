@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import NeuroID
+import Neuro_ID
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {

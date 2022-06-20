@@ -1,4 +1,4 @@
-module Pods_NeuroIdExampleUITests {
+framework module Pods_NeuroIdExampleUITests {
   umbrella header "Pods-NeuroIdExampleUITests-umbrella.h"
 
   export *
