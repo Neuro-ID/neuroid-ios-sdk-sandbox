@@ -6,6 +6,7 @@ on:
         types: [on-demand-testflight]
 env:
  VERSION: ${{ github.event.client_payload.version }}
+ MESSAGE: ${{ github.event.client_payload.message }}
 jobs:
   updating_files:
     runs-on: macos-latest
@@ -45,7 +46,7 @@ jobs:
           git status
           set +e
           git add .
-          git commit -m "Updating Pods files ${{ env.VERSION }}"
+          git commit -m "Commit message: ${{ env.MESSAGE }}"
           git push
           set -e
   
