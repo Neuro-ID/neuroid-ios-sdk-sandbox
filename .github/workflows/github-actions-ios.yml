@@ -46,7 +46,7 @@ jobs:
           git status
           set +e
           git add .
-          git commit -m "Commit message: ${{ env.MESSAGE }}"
+          git commit -m "${{ env.MESSAGE }}"
           git push
           set -e
   
